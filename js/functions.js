@@ -41,8 +41,12 @@ document.getElementById("contact-form").addEventListener("submit", (event) => {
 
   data.timestamp = new Date().toISOString();
 
-  saveContact(data);
-  console.log("Datos a enviar al Firebase:", data);
+  if (validateEmail) {
+    saveContact(data);
+    console.log("Datos a enviar al Firebase:", data);
+  } else {
+    console.error("Email no válido");
+  }
 });
 
 export { fetchFakerData };
