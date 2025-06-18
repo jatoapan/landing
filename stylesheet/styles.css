@@ -16,7 +16,7 @@
 }
 
 /* Carrusel con sufijo único */
-.vertical-slide-carousel-1 .swiper-wrapper {
+.vertical-slide-carousel .swiper-wrapper {
   width: 100%;
   height: max-content !important;
   padding-bottom: 64px !important;
@@ -26,10 +26,10 @@
 }
 
 /* Estilo de la barra de progreso para el carrusel con sufijo único */
-.vertical-slide-carousel-1 .swiper-pagination-bullet {
+.vertical-slide-carousel .swiper-pagination-bullet {
   background: #4f46e5;
 }
 
-.vertical-slide-carousel-1 .swiper-pagination-bullet-active {
+.vertical-slide-carousel .swiper-pagination-bullet-active {
   background: #4f46e5 !important;
 }
