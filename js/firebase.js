@@ -1046,18 +1046,36 @@ const displayTestimonies = async () => {
   });
 };
 
+const getSemiRealisticFromStorage = async () => {
+  const semiRealisticRef = storageRef.child('products/semi-realistic');
+  const result = await semiRealisticRef.listAll();
+  const imageUrls = [];
+  for (let item of result.items) {
+    const url = await item.getDownloadURL();
+    imageUrls.push(url);
+  }
+  return imageUrls;
+};
+
+const uploadSemiRealisticToFirestore = async () => {
+  const imageUrls = await getSemiRealisticFromStorage();
+  const semiRealisticData = [
+    { name: "Semi Realista 1", price: 10.00 },
+    { name: "Semi Realista 2", price: 20.00 },
+    { name: "Semi Realista 3", price: 30.00 }
+  ];
+  const semiRealisticCollection = firestore.collection('semi-realistic');
+  for (let i = 0; i < imageUrls.length; i++) {
+    const semiRealistic = semiRealisticData[i];
+    const semiRealisticObj = {
+      name: semiRealistic.name,
+      price: semiRealistic.price,
+      imageUrl: imageUrls[i]
+    };
+    await semiRealisticCollection.add(semiRealisticObj);
+  }
+};
+
 window.onload = function () {
-  loadSlidesFirstCarousel();
-  loadSlidesSecondCarousel();
-  renderCategories();
-  displayPaintings();
-  displayChibis();
-  displayHead();
-  displayIcons();
-  displayHalfBody();
-  displayWholeBody();
-  displayEmotes();
-  displayOverlays();
-  displayWallpapers();
-  displayTestimonies();
+
 };

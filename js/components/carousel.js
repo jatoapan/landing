@@ -12,32 +12,23 @@ export class Carousel {
         imageUrls.forEach((url, index) => {
           const slideDiv = document.createElement('div');
           slideDiv.classList.add('swiper-slide');
-          const slideContent = `
+          slideDiv.innerHTML = `
             <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
               <img src="${url}" alt="Slide ${index + 1}" class="w-full h-full object-cover object-center rounded-2xl" />
             </div>
           `;
-          slideDiv.innerHTML = slideContent;
           swiperWrapper.appendChild(slideDiv);
         });
 
         new Swiper(".vertical-slide-carousel", {
-          loop: imageUrls.length > 2, // ← ESTE ES EL CAMBIO CLAVE
+          loop: imageUrls.length > 2, // ← FIX PARA EL WARNING
           direction: "vertical",
           mousewheelControl: true,
-          mousewheel: {
-            releaseOnEdges: true,
-          },
+          mousewheel: { releaseOnEdges: true },
           spaceBetween: 30,
           grabCursor: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          },
+          pagination: { el: ".swiper-pagination", clickable: true },
+          autoplay: { delay: 2500, disableOnInteraction: false }
         });
       } else {
         console.error("No se encontró el contenedor para el primer carrusel.");
@@ -56,7 +47,7 @@ export class Carousel {
       if (swiperWrapper) {
         swiperWrapper.innerHTML = '';
         
-        videoFiles.forEach((videoUrl, index) => {
+        videoFiles.forEach(videoUrl => {
           const slideDiv = document.createElement('div');
           slideDiv.classList.add('swiper-slide');
           slideDiv.innerHTML = `
@@ -69,34 +60,24 @@ export class Carousel {
           swiperWrapper.appendChild(slideDiv);
         });
 
-        const secondCarouselSwiper = new Swiper(".centered-slide-carousel", {
+        new Swiper(".centered-slide-carousel", {
           centeredSlides: true,
           paginationClickable: true,
-          loop: videoFiles.length > 1, // Ya estaba bien
+          loop: videoFiles.length > 1,
           spaceBetween: 30,
           slideToClickedSlide: true,
-          pagination: {
-            el: ".centered-slide-carousel .swiper-pagination",
-            clickable: true,
-          },
-          mousewheel: {
-            releaseOnEdges: true,
-            enabled: true,
-          },
-          autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-          },
+          pagination: { el: ".centered-slide-carousel .swiper-pagination", clickable: true },
+          mousewheel: { releaseOnEdges: true, enabled: true },
+          autoplay: { delay: 2500, disableOnInteraction: false },
           breakpoints: {
             1280: { slidesPerView: 4, spaceBetween: 30 },
             1024: { slidesPerView: 3, spaceBetween: 20 },
             768: { slidesPerView: 2, spaceBetween: 10 },
-            640: { slidesPerView: 1, spaceBetween: 5 },
+            640: { slidesPerView: 1, spaceBetween: 5 }
           },
           observer: true,
-          observeParents: true,
+          observeParents: true
         });
-        secondCarouselSwiper.update();
       } else {
         console.error("No se encontró el contenedor para el segundo carrusel.");
       }

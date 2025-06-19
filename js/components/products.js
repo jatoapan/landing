@@ -57,6 +57,7 @@ export class Products {
       { collection: 'icons', container: 'icons-container' },
       { collection: 'half-body', container: 'half-body-container' },
       { collection: 'whole-body', container: 'whole-body-container' },
+      { collection: 'semi-realistic', container: 'semi-realistic-container' },
       { collection: 'emotes', container: 'emotes-container' },
       { collection: 'overwal', container: 'overlays-container' },
       { collection: 'wallpaper', container: 'wallpapers-container' }

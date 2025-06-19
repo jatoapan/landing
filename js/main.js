@@ -14,19 +14,13 @@ class App {
 
   async init() {
     try {
-      // Cargar recursos básicos
       await StorageService.loadLogos();
       await StorageService.loadAboutImage();
-      
-      // Inicializar carruseles
       await Carousel.initVerticalCarousel();
       await Carousel.initHorizontalCarousel();
-      
-      // Renderizar componentes
       await Categories.render();
       await this.products.renderAllProducts();
       await this.testimonies.render();
-      
       console.log('App initialized successfully');
     } catch (error) {
       console.error('Error initializing app:', error);
@@ -34,7 +28,6 @@ class App {
   }
 }
 
-// Inicializar cuando el DOM esté listo
 window.addEventListener('load', () => {
   const app = new App();
   app.init();
