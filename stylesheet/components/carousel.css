@@ -1,0 +1,16 @@
+/* Estilos del carousel vertical */
+.vertical-slide-carousel .swiper-wrapper {
+  width: 100%;
+  height: max-content !important;
+  padding-bottom: 64px !important;
+  transition-timing-function: linear !important;
+  position: relative;
+}
+
+.vertical-slide-carousel .swiper-pagination-bullet {
+  background: #4f46e5;
+}
+
+.vertical-slide-carousel .swiper-pagination-bullet-active {
+  background: #4f46e5 !important;
+}

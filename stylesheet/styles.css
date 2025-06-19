@@ -1,35 +1,5 @@
-.work-sans {
-  font-family: "Work Sans", sans-serif;
-}
-
-#menu-toggle:checked + #menu {
-  display: block;
-}
-
-.hover\:grow {
-  transition: all 0.3s;
-  transform: scale(1);
-}
-
-.hover\:grow:hover {
-  transform: scale(1.02);
-}
-
-/* Carrusel con sufijo único */
-.vertical-slide-carousel .swiper-wrapper {
-  width: 100%;
-  height: max-content !important;
-  padding-bottom: 64px !important;
-  -webkit-transition-timing-function: linear !important;
-  transition-timing-function: linear !important;
-  position: relative;
-}
-
-/* Estilo de la barra de progreso para el carrusel con sufijo único */
-.vertical-slide-carousel .swiper-pagination-bullet {
-  background: #4f46e5;
-}
-
-.vertical-slide-carousel .swiper-pagination-bullet-active {
-  background: #4f46e5 !important;
-}
+@import './base/variables.css';
+@import './base/typography.css';
+@import './components/carousel.css';
+@import './components/cards.css';
+@import './components/animations.css';
