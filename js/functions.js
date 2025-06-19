@@ -49,4 +49,6 @@ document.getElementById("contact-form").addEventListener("submit", (event) => {
   }
 });
 
+document.getElementById("year").textContent = new Date().getFullYear();
+
 export { fetchFakerData };
