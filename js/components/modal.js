@@ -6,7 +6,6 @@ export class Modal {
 
   createModal() {
     if (document.getElementById('image-modal')) return;
-
     const modal = document.createElement('div');
     modal.id = 'image-modal';
     modal.className = 'fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden';
@@ -22,12 +21,10 @@ export class Modal {
   bindEvents() {
     const closeBtn = document.getElementById('close-modal-btn');
     const modal = document.getElementById('image-modal');
-    
     closeBtn?.addEventListener('click', () => this.close());
     modal?.addEventListener('click', (e) => {
       if (e.target === modal) this.close();
     });
-    
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') this.close();
     });
@@ -36,7 +33,6 @@ export class Modal {
   open(imageUrl, imageName) {
     const modal = document.getElementById('image-modal');
     const modalImage = document.getElementById('modal-image');
-    
     if (modal && modalImage) {
       modalImage.src = imageUrl;
       modalImage.alt = imageName;

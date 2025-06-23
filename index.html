@@ -23,151 +23,135 @@
   <script type="module" src="./js/main.js"></script>
 </head>
 
-<body class="bg-white text-gray-600 work-sans leading-normal text-base tracking-normal">
-  <header id="home" class="py-8">
-    <nav class="bg-white border-gray-200 dark:bg-gray-900 fixed top-0 left-0 right-0 z-50 py-8">
-      <div class="max-w-full flex flex-wrap items-center justify-around mx-auto p-4">
-        <div class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img id="header-logo-img" class="w-20 h-10" alt="Proyecto Kain Logo" src="" />
-          <span class="self-center text-2xl font-semibold whitespace-nowrap font-gaegu">Proyecto Kain</span>
-        </div>
-        <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
-          <button type="button" data-dropdown-toggle="language-dropdown-menu"
-            class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white font-righteous">
-            <svg class="w-5 h-5 rounded-full me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3900 3900">
-              <path fill="#b22234" d="M0 0h7410v3900H0z" />
-              <path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff" stroke-width="300" />
-              <path fill="#3c3b6e" d="M0 0h2964v2100H0z" />
-              <g fill="#fff">
-                <g id="d">
-                  <g id="c">
-                    <g id="e">
-                      <g id="b">
-                        <path id="a" d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z" />
-                        <use xlink:href="#a" y="420" />
-                        <use xlink:href="#a" y="840" />
-                        <use xlink:href="#a" y="1260" />
-                      </g>
-                      <use xlink:href="#a" y="1680" />
-                    </g>
-                    <use xlink:href="#b" x="247" y="210" />
-                  </g>
-                  <use xlink:href="#c" x="494" />
-                </g>
-                <use xlink:href="#d" x="988" />
-                <use xlink:href="#c" x="1976" />
-                <use xlink:href="#e" x="2470" />
-              </g>
-            </svg>
-            English (US)
-          </button>
-          <div
-            class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700"
-            id="language-dropdown-menu">
-            <ul class="py-2 font-medium font-righteous" role="none">
-              <li>
-                <a href="#"
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-                  role="menuitem">
-                  <div class="inline-flex items-center">
-                    <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full me-2" xmlns="http://www.w3.org/2000/svg"
-                      id="flag-icon-css-us" viewBox="0 0 512 512">
-                      <g fill-rule="evenodd">
-                        <g stroke-width="1pt">
-                          <path fill="#bd3d44"
-                            d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
-                            transform="scale(3.9385)" />
-                          <path fill="#fff"
-                            d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
-                            transform="scale(3.9385)" />
-                        </g>
-                        <path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)" />
-                        <path fill="#fff"
-                          d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z"
-                          transform="scale(3.9385)" />
-                      </g>
-                    </svg>
-                    English (US)
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#"
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-                  role="menuitem">
-                  <div class="inline-flex items-center">
-                    <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full me-2" xmlns="http://www.w3.org/2000/svg"
-                      id="flag-icon-css-es" viewBox="0 0 512 512">
-                      <g fill-rule="evenodd">
-                        <g stroke-width="1pt">
-                          <path fill="#aa151b"
-                            d="M0 0h512v38H0zm0 76h512v38H0zm0 76h512v38H0zm0 76h512v38H0zm0 76h512v38H0zm0 76h512v38H0z" />
-                          <path fill="#f1bf00"
-                            d="M0 38h512v38H0zm0 76h512v38H0zm0 76h512v38H0zm0 76h512v38H0zm0 76h512v38H0zm0 76h512v38H0z" />
-                          <g fill="#c60c30">
-                            <path
-                              d="M128 128H0v38h128zM384 128h128v38H384zM128 256H0v38h128zM384 256h128v38H384zM128 384H0v38h128zM384 384h128v38H384z" />
-                          </g>
-                        </g>
-                      </g>
-                    </svg>
-                    Español (España)
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <button data-collapse-toggle="navbar-language" type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-language" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M1 1h15M1 7h15M1 13h15" />
-            </svg>
-          </button>
-        </div>
-        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
-          <ul
-            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li class="mr-0">
-              <a href="#home"
-                class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 font-gaegu">Inicio</a>
+<body style="background: var(--bridal-heath);" class="text-gray-600 work-sans leading-normal text-base tracking-normal">
+ <header id="home" class="py-8">
+  <nav style="background: var(--bridal-heath); border-color: var(--chrome-white);" class="border-b-2 fixed top-0 left-0 right-0 z-50 py-8 shadow-sm">
+    <div class="max-w-full flex flex-wrap items-center justify-around mx-auto p-4">
+      <div class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img id="header-logo-img" class="w-20 h-10" alt="Proyecto Kain Logo" src="" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap font-gaegu" style="color: var(--slate-gray-dark);">Proyecto Kain</span>
+      </div>
+      <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+        <button type="button" data-dropdown-toggle="language-dropdown-menu"
+          class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm rounded-lg cursor-pointer transition-all duration-300 font-righteous"
+          style="color: var(--pigeon-post); border: 1px solid var(--chrome-white);"
+          onmouseover="this.style.backgroundColor='var(--pixie-green-light)'; this.style.color='var(--slate-gray-dark)'"
+          onmouseout="this.style.backgroundColor='transparent'; this.style.color='var(--pigeon-post)'">
+          <svg class="w-5 h-5 rounded-full me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+            <!-- Bandera de España -->
+            <path fill="#c41e3a" d="M0 0h512v512H0z"/>
+            <path fill="#ffc400" d="M0 128h512v256H0z"/>
+          </svg>
+          Español (España)
+        </button>
+        <div class="z-50 hidden my-4 text-base list-none divide-y rounded-lg shadow-sm"
+          style="background: var(--bridal-heath); border: 1px solid var(--chrome-white);"
+          id="language-dropdown-menu">
+          <ul class="py-2 font-medium font-righteous" role="none">
+            <li>
+              <a href="#" class="block px-4 py-2 text-sm transition-colors duration-300"
+                style="color: var(--pigeon-post);"
+                onmouseover="this.style.backgroundColor='var(--pixie-green-light)'"
+                onmouseout="this.style.backgroundColor='transparent'"
+                role="menuitem">
+                <div class="inline-flex items-center">
+                  <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full me-2" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512">
+                    <!-- Bandera de España -->
+                    <path fill="#c41e3a" d="M0 0h512v512H0z"/>
+                    <path fill="#ffc400" d="M0 128h512v256H0z"/>
+                  </svg>
+                  Español (España)
+                </div>
+              </a>
             </li>
             <li>
-              <a href="#about"
-                class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 font-gaegu">¿Quién
-                Soy?</a>
-            </li>
-            <li>
-              <a href="#categories"
-                class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 font-gaegu">Categorías</a>
-            </li>
-            <li>
-              <a href="#products"
-                class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 font-gaegu">Productos</a>
-            </li>
-            <li>
-              <a href="#values"
-                class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 font-gaegu">Valores</a>
-            </li>
-            <li>
-              <a href="#testimonies"
-                class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 font-gaegu">Testimonios</a>
-            </li>
-            <li>
-              <a href="#contact"
-                class="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 font-gaegu">Contacto</a>
+              <a href="#" class="block px-4 py-2 text-sm transition-colors duration-300"
+                style="color: var(--pigeon-post);"
+                onmouseover="this.style.backgroundColor='var(--pixie-green-light)'"
+                onmouseout="this.style.backgroundColor='transparent'"
+                role="menuitem">
+                <div class="inline-flex items-center">
+                  <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full me-2" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512">
+                    <!-- Bandera de Estados Unidos -->
+                    <path fill="#b22234" d="M0 0h512v512H0z" />
+                    <path d="M0 58h512M0 137h512M0 216h512M0 295h512M0 374h512M0 453h512" stroke="#fff" stroke-width="39" />
+                    <path fill="#3c3b6e" d="M0 0h256v278H0z" />
+                  </svg>
+                  English (US)
+                </div>
+              </a>
             </li>
           </ul>
         </div>
+        <button data-collapse-toggle="navbar-language" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden transition-all duration-300"
+          style="color: var(--pigeon-post); border: 1px solid var(--chrome-white);"
+          onmouseover="this.style.backgroundColor='var(--pixie-green-light)'"
+          onmouseout="this.style.backgroundColor='transparent'"
+          aria-controls="navbar-language" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
       </div>
-    </nav>
-  </header>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
+        <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+          style="background: var(--bridal-heath); border-color: var(--chrome-white-dark); md:background: var(--bridal-heath);">
+          <li class="mr-0">
+            <a href="#home" class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
+              style="color: var(--slate-gray-dark);"
+              onmouseover="this.style.color='var(--pixie-green-dark)'"
+              onmouseout="this.style.color='var(--slate-gray-dark)'">Inicio</a>
+          </li>
+          <li>
+            <a href="#about" class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
+              style="color: var(--slate-gray-dark);"
+              onmouseover="this.style.color='var(--pixie-green-dark)'"
+              onmouseout="this.style.color='var(--slate-gray-dark)'">¿Quién Soy?</a>
+          </li>
+          <li>
+            <a href="#categories" class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
+              style="color: var(--slate-gray-dark);"
+              onmouseover="this.style.color='var(--pixie-green-dark)'"
+              onmouseout="this.style.color='var(--slate-gray-dark)'">Categorías</a>
+          </li>
+          <li>
+            <a href="#products" class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
+              style="color: var(--slate-gray-dark);"
+              onmouseover="this.style.color='var(--pixie-green-dark)'"
+              onmouseout="this.style.color='var(--slate-gray-dark)'">Productos</a>
+          </li>
+          <li>
+            <a href="#values" class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
+              style="color: var(--slate-gray-dark);"
+              onmouseover="this.style.color='var(--pixie-green-dark)'"
+              onmouseout="this.style.color='var(--slate-gray-dark)'">Valores</a>
+          </li>
+          <li>
+            <a href="#testimonies" class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
+              style="color: var(--slate-gray-dark);"
+              onmouseover="this.style.color='var(--pixie-green-dark)'"
+              onmouseout="this.style.color='var(--slate-gray-dark)'">Testimonios</a>
+          </li>
+          <li>
+            <a href="#contact" class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
+              style="color: var(--slate-gray-dark);"
+              onmouseover="this.style.color='var(--pixie-green-dark)'"
+              onmouseout="this.style.color='var(--slate-gray-dark)'">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
   <main>
 
-    <section class="bg-white">
+    <section style="background: var(--bridal-heath);">
       <div class="w-full relative">
         <div class="swiper vertical-slide-carousel swiper-container relative h-96">
           <div class="swiper-wrapper" id="swiper-wrapper">
@@ -178,32 +162,31 @@
       </div>
     </section>
 
-    <section id="about" class="bg-gradient-to-br from-white to-gray-50 py-16">
+    <section id="about" class="py-16" style="background: linear-gradient(135deg, var(--bridal-heath), var(--chrome-white));">
       <div class="container mx-auto flex items-center flex-wrap pt-4 pb-12">
         <div class="w-full md:w-1/2 p-6 flex flex-col">
           <div class="relative">
-            <h1 class="font-gaegu text-4xl font-bold tracking-wide text-gray-800 mt-4 mb-6 relative">
+            <h1 class="font-gaegu text-4xl font-bold tracking-wide mt-4 mb-6 relative" style="color: var(--slate-gray-dark);">
               ¿Quién Soy?
             </h1>
           </div>
 
           <div class="space-y-6">
-            <div
-              class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-indigo-400 hover:shadow-md transition-all duration-300">
-              <p class="font-righteous text-base text-gray-700 text-justify leading-relaxed">
-                Mi nombre es <span class="font-bold text-indigo-600">Kain</span> y soy artista desde que tengo memoria.
-                Desde
-                pequeña, el arte ha sido una parte esencial de mi vida, un espacio
+            <div class="p-6 rounded-xl shadow-sm border-l-4 transition-all duration-300 hover:shadow-md"
+              style="background: var(--bridal-heath); border-left-color: var(--pixie-green);">
+              <p class="font-righteous text-base text-justify leading-relaxed" style="color: var(--pigeon-post);">
+                Mi nombre es <span class="font-bold" style="color: var(--pixie-green-dark);">Kain</span> y soy artista desde que tengo memoria.
+                Desde pequeña, el arte ha sido una parte esencial de mi vida, un espacio
                 donde siempre encontré libertad para expresarme. El arte digital
                 fue lo que más capturó mi atención, y con el tiempo se convirtió
                 en el puente entre mis ideas y el mundo.
               </p>
             </div>
 
-            <div
-              class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-purple-400 hover:shadow-md transition-all duration-300">
-              <p class="font-righteous text-base text-gray-700 text-justify leading-relaxed">
-                Creo profundamente que todos necesitamos un poco de <span class="font-bold text-purple-600">arte en
+            <div class="p-6 rounded-xl shadow-sm border-l-4 transition-all duration-300 hover:shadow-md"
+              style="background: var(--bridal-heath); border-left-color: var(--slate-gray);">
+              <p class="font-righteous text-base text-justify leading-relaxed" style="color: var(--pigeon-post);">
+                Creo profundamente que todos necesitamos un poco de <span class="font-bold" style="color: var(--slate-gray-dark);">arte en
                   nuestras vidas</span>, y me encantaría ser quien lo aporte. Mi estilo
                 tiene una fuerte inspiración en el anime, pero siempre lo mezclo
                 con mi propia esencia. Aun así, me gusta desafiarme y explorar
@@ -212,12 +195,11 @@
               </p>
             </div>
 
-            <div
-              class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-pink-400 hover:shadow-md transition-all duration-300">
-              <p class="font-righteous text-base text-gray-700 text-justify leading-relaxed">
-                <span class="font-bold text-pink-600">Crear es mi forma de conectar, sanar y compartir.</span> Y si a
-                través de
-                mis obras logro provocar una emoción, una sonrisa o simplemente un
+            <div class="p-6 rounded-xl shadow-sm border-l-4 transition-all duration-300 hover:shadow-md"
+              style="background: var(--bridal-heath); border-left-color: var(--pigeon-post);">
+              <p class="font-righteous text-base text-justify leading-relaxed" style="color: var(--pigeon-post);">
+                <span class="font-bold" style="color: var(--pigeon-post-dark);">Crear es mi forma de conectar, sanar y compartir.</span> Y si a
+                través de mis obras logro provocar una emoción, una sonrisa o simplemente un
                 instante de calma, entonces mi arte ha cumplido su propósito.
               </p>
             </div>
@@ -226,11 +208,11 @@
           <!-- Elementos decorativos -->
           <div class="flex items-center gap-4 mt-8">
             <div class="flex space-x-2">
-              <div class="w-3 h-3 bg-indigo-400 rounded-full animate-pulse"></div>
-              <div class="w-3 h-3 bg-purple-400 rounded-full animate-pulse" style="animation-delay: 0.2s"></div>
-              <div class="w-3 h-3 bg-pink-400 rounded-full animate-pulse" style="animation-delay: 0.4s"></div>
+              <div class="w-3 h-3 rounded-full pulse-green"></div>
+              <div class="w-3 h-3 rounded-full" style="background: var(--slate-gray); animation: pulse 2s infinite; animation-delay: 0.2s"></div>
+              <div class="w-3 h-3 rounded-full" style="background: var(--pigeon-post); animation: pulse 2s infinite; animation-delay: 0.4s"></div>
             </div>
-            <p class="font-righteous text-sm text-gray-500 italic">
+            <p class="font-righteous text-sm italic" style="color: var(--pigeon-post-light);">
               "El arte es la expresión del alma"
             </p>
           </div>
@@ -239,39 +221,39 @@
         <div class="w-full md:w-1/2 p-6 flex justify-center items-center">
           <div class="relative group">
             <!-- Decoración de fondo -->
-            <div
-              class="absolute -inset-4 bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition-all duration-500">
+            <div class="absolute -inset-4 rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition-all duration-500"
+              style="background: linear-gradient(90deg, var(--pixie-green), var(--slate-gray), var(--pigeon-post));">
             </div>
 
             <!-- Imagen principal -->
-            <div class="relative bg-white p-4 rounded-2xl shadow-xl">
+            <div class="relative p-4 rounded-2xl shadow-xl" style="background: var(--bridal-heath);">
               <img id="about-img"
                 class="w-full h-auto max-w-full rounded-xl object-cover md:h-[400px] lg:h-[500px] transition-all duration-500 group-hover:scale-105"
                 src="" alt="Kain - Artista Digital" />
 
               <!-- Overlay con información -->
-              <div
-                class="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-sm rounded-lg p-3 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                <p class="font-gaegu text-sm font-bold text-gray-800">Kain</p>
-                <p class="font-righteous text-xs text-gray-600">Artista Digital</p>
+              <div class="absolute bottom-6 left-6 right-6 backdrop-blur-sm rounded-lg p-3 opacity-0 group-hover:opacity-100 transition-all duration-300"
+                style="background: rgba(255, 250, 244, 0.9);">
+                <p class="font-gaegu text-sm font-bold" style="color: var(--slate-gray-dark);">Kain</p>
+                <p class="font-righteous text-xs" style="color: var(--pigeon-post);">Artista Digital</p>
               </div>
             </div>
 
             <!-- Elementos decorativos flotantes -->
-            <div
-              class="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-br from-indigo-400 to-purple-500 rounded-full opacity-80">
+            <div class="absolute -top-4 -right-4 w-8 h-8 rounded-full opacity-80"
+              style="background: linear-gradient(135deg, var(--pixie-green), var(--slate-gray));">
             </div>
-            <div
-              class="absolute -bottom-4 -left-4 w-6 h-6 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full opacity-60">
+            <div class="absolute -bottom-4 -left-4 w-6 h-6 rounded-full opacity-60"
+              style="background: linear-gradient(135deg, var(--slate-gray), var(--pigeon-post));">
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="categories" class="bg-white py-8">
+    <section id="categories" class="py-8" style="background: var(--bridal-heath);">
       <div class="container py-4 px-6 mx-auto flex justify-center">
-        <h1 class="font-gaegu text-3xl font-bold tracking-wide text-gray-800 mt-2 mb-2">
+        <h1 class="font-gaegu text-3xl font-bold tracking-wide mt-2 mb-2" style="color: var(--slate-gray-dark);">
           Categorías
         </h1>
       </div>
@@ -280,22 +262,22 @@
       </div>
     </section>
 
-    <section id="products" class="bg-white py-8">
+    <section id="products" class="py-8" style="background: var(--chrome-white);">
 
       <div class="container py-4 px-6 mx-auto flex justify-center">
-        <h1 class="font-gaegu text-3xl font-bold tracking-wide text-gray-800 mt-2 mb-2">
+        <h1 class="font-gaegu text-3xl font-bold tracking-wide mt-2 mb-2" style="color: var(--slate-gray-dark);">
           Productos
         </h1>
       </div>
 
       <div class="container py-4 px-6 mx-auto flex justify-start">
-        <h2 class="font-gaegu text-2xl font-bold tracking-wide text-gray-800 mt-2 mb-2">
+        <h2 class="font-gaegu text-2xl font-bold tracking-wide mt-2 mb-2" style="color: var(--pigeon-post-dark);">
           Arte Físico
         </h2>
       </div>
 
       <div class="container py-4 px-6 mx-auto flex justify-start">
-        <h3 class="font-gaegu text-xl font-medium tracking-wide text-gray-800 mt-2 mb-2">
+        <h3 class="font-gaegu text-xl font-medium tracking-wide mt-2 mb-2" style="color: var(--slate-gray);">
           Cuadros Personalizados
         </h3>
       </div>
@@ -304,7 +286,7 @@
       </div>
 
       <div class="container py-4 px-6 mx-auto flex justify-start">
-        <h3 class="font-gaegu text-xl font-medium tracking-wide text-gray-800 mt-2 mb-2">
+        <h3 class="font-gaegu text-xl font-medium tracking-wide mt-2 mb-2" style="color: var(--slate-gray);">
           Cuadros de One Piece
         </h3>
       </div>
@@ -318,15 +300,14 @@
         </div>
       </div>
 
-
       <div class="container py-4 px-6 mx-auto flex justify-start">
-        <h2 class="font-gaegu text-2xl font-bold tracking-wide text-gray-800 mt-2 mb-2">
+        <h2 class="font-gaegu text-2xl font-bold tracking-wide mt-2 mb-2" style="color: var(--pigeon-post-dark);">
           Arte Digital
         </h2>
       </div>
 
       <div class="container py-4 px-6 mx-auto flex justify-start">
-        <h3 class="font-gaegu text-xl font-medium tracking-wide text-gray-800 mb-8">
+        <h3 class="font-gaegu text-xl font-medium tracking-wide mb-8" style="color: var(--slate-gray);">
           Chibis
         </h3>
       </div>
@@ -335,7 +316,7 @@
       </div>
 
       <div class="container py-4 px-6 mx-auto flex justify-start">
-        <h3 class="font-gaegu text-xl font-medium tracking-wide text-gray-800 mt-2 mb-2">
+        <h3 class="font-gaegu text-xl font-medium tracking-wide mt-2 mb-2" style="color: var(--slate-gray);">
           Cabeza
         </h3>
       </div>
@@ -344,7 +325,7 @@
       </div>
 
       <div class="container py-4 px-6 mx-auto flex justify-start">
-        <h3 class="font-gaegu text-xl font-medium tracking-wide text-gray-800 mt-2 mb-2">
+        <h3 class="font-gaegu text-xl font-medium tracking-wide mt-2 mb-2" style="color: var(--slate-gray);">
           Iconos
         </h3>
       </div>
@@ -353,7 +334,7 @@
       </div>
 
       <div class="container py-4 px-6 mx-auto flex justify-start">
-        <h3 class="font-gaegu text-xl font-medium tracking-wide text-gray-800 mt-2 mb-2">
+        <h3 class="font-gaegu text-xl font-medium tracking-wide mt-2 mb-2" style="color: var(--slate-gray);">
           Medio Cuerpo
         </h3>
       </div>
@@ -362,7 +343,7 @@
       </div>
 
       <div class="container py-4 px-6 mx-auto flex justify-start">
-        <h3 class="font-gaegu text-xl font-medium tracking-wide text-gray-800 mt-2 mb-2">
+        <h3 class="font-gaegu text-xl font-medium tracking-wide mt-2 mb-2" style="color: var(--slate-gray);">
           Cuerpo Completo
         </h3>
       </div>
@@ -371,7 +352,7 @@
       </div>
 
       <div class="container py-4 px-6 mx-auto flex justify-start">
-        <h3 class="font-gaegu text-xl font-medium tracking-wide text-gray-800 mt-2 mb-2">
+        <h3 class="font-gaegu text-xl font-medium tracking-wide mt-2 mb-2" style="color: var(--slate-gray);">
           Semi Realista
         </h3>
       </div>
@@ -380,7 +361,7 @@
       </div>
 
       <div class="container py-4 px-6 mx-auto flex justify-start">
-        <h3 class="font-gaegu text-xl font-medium tracking-wide text-gray-800 mt-2 mb-2">
+        <h3 class="font-gaegu text-xl font-medium tracking-wide mt-2 mb-2" style="color: var(--slate-gray);">
           Emotes
         </h3>
       </div>
@@ -390,7 +371,7 @@
       </div>
 
       <div class="container py-4 px-6 mx-auto flex justify-start">
-        <h3 class="font-gaegu text-xl font-medium tracking-wide text-gray-800 mb-8">
+        <h3 class="font-gaegu text-xl font-medium tracking-wide mb-8" style="color: var(--slate-gray);">
           Overwal
         </h3>
       </div>
@@ -399,7 +380,7 @@
       </div>
 
       <div class="container py-4 px-6 mx-auto flex justify-start">
-        <h3 class="font-gaegu text-xl font-medium tracking-wide text-gray-800 mb-8">
+        <h3 class="font-gaegu text-xl font-medium tracking-wide mb-8" style="color: var(--slate-gray);">
           Fondos de Pantalla
         </h3>
       </div>
@@ -409,9 +390,9 @@
 
     </section>
 
-    <section id="values" class="bg-white py-8">
+    <section id="values" class="py-8" style="background: var(--bridal-heath);">
       <div class="container py-4 px-6 mx-auto flex justify-center">
-        <h1 class="font-gaegu text-3xl font-bold tracking-wide text-gray-800 mt-2 mb-2">
+        <h1 class="font-gaegu text-3xl font-bold tracking-wide mt-2 mb-2" style="color: var(--slate-gray-dark);">
           Valores
         </h1>
       </div>
@@ -419,32 +400,36 @@
       <!-- Sección de características embebida -->
       <div class="container mx-auto flex flex-wrap pt-4 pb-12">
         <div class="w-full md:w-1/2 p-6">
-          <h2 class="font-gaegu text-2xl font-bold tracking-wide text-gray-800 mt-2 mb-2">
+          <h2 class="font-gaegu text-2xl font-bold tracking-wide mt-2 mb-2" style="color: var(--pigeon-post-dark);">
             Descubre lo que hace especial mi arte
           </h2>
         </div>
         <div class="w-full md:w-1/2 p-6">
-          <p class="font-righteous text-base text-gray-700 text-justify mt-2 mb-2">
+          <p class="font-righteous text-base text-justify mt-2 mb-2" style="color: var(--pigeon-post);">
             Cada pieza que creo está respaldada por valores fundamentales que definen mi proceso creativo y mi
             compromiso contigo como cliente.
           </p>
-          <a href="#contact"
-            class="inline-flex flex-row items-center gap-2 text-base font-semibold text-indigo-600 hover:text-indigo-700">
+          <a href="#contact" class="inline-flex flex-row items-center gap-2 text-base font-semibold transition-colors duration-300"
+            style="color: var(--pixie-green-dark);"
+            onmouseover="this.style.color='var(--pixie-green)'"
+            onmouseout="this.style.color='var(--pixie-green-dark)'">
             Contáctame
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M7.5 15L11.0858 11.4142C11.7525 10.7475 12.0858 10.4142 12.0858 10C12.0858 9.58579 11.7525 9.25245 11.0858 8.58579L7.5 5"
-                stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
           </a>
         </div>
 
         <div class="w-full md:w-1/2 xl:w-1/4 p-6 flex">
-          <div
-            class="flex flex-col bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 hover:shadow-xl transition-all duration-500 transform hover:scale-105 w-full">
+          <div class="flex flex-col rounded-lg shadow-sm transition-all duration-500 transform hover:scale-105 w-full hover:shadow-xl"
+            style="background: var(--bridal-heath); border: 1px solid var(--chrome-white);"
+            onmouseover="this.style.backgroundColor='var(--chrome-white)'"
+            onmouseout="this.style.backgroundColor='var(--bridal-heath)'">
             <div class="flex justify-center items-center p-6">
-              <div
-                class="bg-gradient-to-br from-purple-400 to-indigo-500 rounded-full flex justify-center items-center mb-5 w-14 h-14">
+              <div class="rounded-full flex justify-center items-center mb-5 w-14 h-14"
+                style="background: linear-gradient(135deg, var(--pixie-green), var(--slate-gray));">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M15 2.5C8.09644 2.5 2.5 8.09644 2.5 15C2.5 21.9036 8.09644 27.5 15 27.5C21.9036 27.5 27.5 21.9036 27.5 15C27.5 8.09644 21.9036 2.5 15 2.5ZM15 20C12.2386 20 10 17.7614 10 15C10 12.2386 12.2386 10 15 10C17.7614 10 20 12.2386 20 15C20 17.7614 17.7614 20 15 20Z"
@@ -453,8 +438,8 @@
               </div>
             </div>
             <div class="flex flex-col p-4 leading-normal flex-1">
-              <h4 class="font-gaegu text-lg font-bold tracking-wide text-gray-800 mb-2">Creatividad Original</h4>
-              <p class="font-righteous text-base text-gray-700 text-justify mt-2 mb-2">
+              <h4 class="font-gaegu text-lg font-bold tracking-wide mb-2" style="color: var(--slate-gray-dark);">Creatividad Original</h4>
+              <p class="font-righteous text-base text-justify mt-2 mb-2" style="color: var(--pigeon-post);">
                 Cada obra es única y personalizada, creada desde cero con mi estilo distintivo inspirado en anime pero
                 con mi toque personal.
               </p>
@@ -463,11 +448,13 @@
         </div>
 
         <div class="w-full md:w-1/2 xl:w-1/4 p-6 flex">
-          <div
-            class="flex flex-col bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 hover:shadow-xl transition-all duration-500 transform hover:scale-105 w-full">
+          <div class="flex flex-col rounded-lg shadow-sm transition-all duration-500 transform hover:scale-105 w-full hover:shadow-xl"
+            style="background: var(--bridal-heath); border: 1px solid var(--chrome-white);"
+            onmouseover="this.style.backgroundColor='var(--chrome-white)'"
+            onmouseout="this.style.backgroundColor='var(--bridal-heath)'">
             <div class="flex justify-center items-center p-6">
-              <div
-                class="bg-gradient-to-br from-pink-400 to-red-500 rounded-full flex justify-center items-center mb-5 w-14 h-14">
+              <div class="rounded-full flex justify-center items-center mb-5 w-14 h-14"
+                style="background: linear-gradient(135deg, var(--slate-gray), var(--pigeon-post));">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M15 3.75L18.5595 10.9405L26.25 12.0855L20.625 17.5645L21.9405 25.2405L15 21.5625L8.0595 25.2405L9.375 17.5645L3.75 12.0855L11.4405 10.9405L15 3.75Z"
@@ -477,8 +464,8 @@
               </div>
             </div>
             <div class="flex flex-col p-4 leading-normal flex-1">
-              <h4 class="font-gaegu text-lg font-bold tracking-wide text-gray-800 mb-2">Calidad Premium</h4>
-              <p class="font-righteous text-base text-gray-700 text-justify mt-2 mb-2">
+              <h4 class="font-gaegu text-lg font-bold tracking-wide mb-2" style="color: var(--slate-gray-dark);">Calidad Premium</h4>
+              <p class="font-righteous text-base text-justify mt-2 mb-2" style="color: var(--pigeon-post);">
                 Utilizo técnicas profesionales y materiales de alta calidad para asegurar que cada pieza supere tus
                 expectativas.
               </p>
@@ -487,11 +474,13 @@
         </div>
 
         <div class="w-full md:w-1/2 xl:w-1/4 p-6 flex">
-          <div
-            class="flex flex-col bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 hover:shadow-xl transition-all duration-500 transform hover:scale-105 w-full">
+          <div class="flex flex-col rounded-lg shadow-sm transition-all duration-500 transform hover:scale-105 w-full hover:shadow-xl"
+            style="background: var(--bridal-heath); border: 1px solid var(--chrome-white);"
+            onmouseover="this.style.backgroundColor='var(--chrome-white)'"
+            onmouseout="this.style.backgroundColor='var(--bridal-heath)'">
             <div class="flex justify-center items-center p-6">
-              <div
-                class="bg-gradient-to-br from-green-400 to-teal-500 rounded-full flex justify-center items-center mb-5 w-14 h-14">
+              <div class="rounded-full flex justify-center items-center mb-5 w-14 h-14"
+                style="background: linear-gradient(135deg, var(--pixie-green-dark), var(--pixie-green));">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M22.5 11.25V6.25C22.5 5.56 21.94 5 21.25 5H6.25C5.56 5 5 5.56 5 6.25V23.75C5 24.44 5.56 25 6.25 25H21.25C21.94 25 22.5 24.44 22.5 23.75V18.75M25 15H15M25 15L21.25 11.25M25 15L21.25 18.75"
@@ -500,8 +489,8 @@
               </div>
             </div>
             <div class="flex flex-col p-4 leading-normal flex-1">
-              <h4 class="font-gaegu text-lg font-bold tracking-wide text-gray-800 mb-2">Entrega Puntual</h4>
-              <p class="font-righteous text-base text-gray-700 text-justify mt-2 mb-2">
+              <h4 class="font-gaegu text-lg font-bold tracking-wide mb-2" style="color: var(--slate-gray-dark);">Entrega Puntual</h4>
+              <p class="font-righteous text-base text-justify mt-2 mb-2" style="color: var(--pigeon-post);">
                 Respeto tus tiempos y deadlines. Mantengo comunicación constante sobre el progreso de tu encargo.
               </p>
             </div>
@@ -509,11 +498,13 @@
         </div>
 
         <div class="w-full md:w-1/2 xl:w-1/4 p-6 flex">
-          <div
-            class="flex flex-col bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 hover:shadow-xl transition-all duration-500 transform hover:scale-105 w-full">
+          <div class="flex flex-col rounded-lg shadow-sm transition-all duration-500 transform hover:scale-105 w-full hover:shadow-xl"
+            style="background: var(--bridal-heath); border: 1px solid var(--chrome-white);"
+            onmouseover="this.style.backgroundColor='var(--chrome-white)'"
+            onmouseout="this.style.backgroundColor='var(--bridal-heath)'">
             <div class="flex justify-center items-center p-6">
-              <div
-                class="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex justify-center items-center mb-5 w-14 h-14">
+              <div class="rounded-full flex justify-center items-center mb-5 w-14 h-14"
+                style="background: linear-gradient(135deg, var(--pigeon-post), var(--pigeon-post-dark));">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M21.25 8.75C21.25 6.67893 19.5711 5 17.5 5C15.4289 5 13.75 6.67893 13.75 8.75C13.75 10.8211 15.4289 12.5 17.5 12.5C19.5711 12.5 21.25 10.8211 21.25 8.75ZM12.5 21.25C12.5 18.4886 14.7386 16.25 17.5 16.25C20.2614 16.25 22.5 18.4886 22.5 21.25V23.75C22.5 24.4404 21.9404 25 21.25 25H13.75C13.0596 25 12.5 24.4404 12.5 23.75V21.25ZM10 11.25C10 9.86929 8.88071 8.75 7.5 8.75C6.11929 8.75 5 9.86929 5 11.25C5 12.6307 6.11929 13.75 7.5 13.75C8.88071 13.75 10 12.6307 10 11.25ZM5 17.5C5 16.1193 6.11929 15 7.5 15C8.88071 15 10 16.1193 10 17.5V20C10 20.6904 9.44036 21.25 8.75 21.25H6.25C5.55964 21.25 5 20.6904 5 20V17.5Z"
@@ -522,8 +513,8 @@
               </div>
             </div>
             <div class="flex flex-col p-4 leading-normal flex-1">
-              <h4 class="font-gaegu text-lg font-bold tracking-wide text-gray-800 mb-2">Atención Personalizada</h4>
-              <p class="font-righteous text-base text-gray-700 text-justify mt-2 mb-2">
+              <h4 class="font-gaegu text-lg font-bold tracking-wide mb-2" style="color: var(--slate-gray-dark);">Atención Personalizada</h4>
+              <p class="font-righteous text-base text-justify mt-2 mb-2" style="color: var(--pigeon-post);">
                 Trabajo de cerca contigo en cada proyecto, escuchando tus ideas y asegurándome de que el resultado final
                 sea exactamente lo que imaginas.
               </p>
@@ -533,9 +524,9 @@
       </div>
     </section>
 
-    <section id="testimonies" class="bg-white py-8">
+    <section id="testimonies" class="py-8" style="background: var(--chrome-white);">
       <div class="container py-4 px-6 mx-auto flex justify-center">
-        <h1 class="font-gaegu text-3xl font-bold tracking-wide text-gray-800 mt-2 mb-2">
+        <h1 class="font-gaegu text-3xl font-bold tracking-wide mt-2 mb-2" style="color: var(--slate-gray-dark);">
           Testimonios
         </h1>
       </div>
@@ -544,10 +535,9 @@
       </div>
     </section>
 
-
-    <section id="contact" class="bg-gradient-to-br from-gray-50 to-white py-16">
+    <section id="contact" class="py-16" style="background: linear-gradient(135deg, var(--bridal-heath), var(--chrome-white));">
       <div class="container py-4 px-6 mx-auto flex justify-center">
-        <h1 class="font-gaegu text-4xl font-bold tracking-wide text-gray-800 mt-2 mb-2">
+        <h1 class="font-gaegu text-4xl font-bold tracking-wide mt-2 mb-2" style="color: var(--slate-gray-dark);">
           Contacto
         </h1>
       </div>
@@ -555,7 +545,7 @@
       <!-- Información de contacto superior -->
       <div class="container mx-auto px-6 mb-12">
         <div class="text-center max-w-2xl mx-auto">
-          <p class="font-righteous text-lg text-gray-600 mb-8">
+          <p class="font-righteous text-lg mb-8" style="color: var(--pigeon-post);">
             ¿Tienes una idea en mente? Me encantaría escucharla y ayudarte a hacerla realidad.
             Completa el formulario y te responderé lo antes posible.
           </p>
@@ -563,50 +553,70 @@
       </div>
 
       <div class="container mx-auto flex items-start flex-wrap pt-4 pb-12">
-        <!-- Contenedor del formulario (MANTENIDO EXACTAMENTE IGUAL) -->
+        <!-- Contenedor del formulario -->
         <div class="w-full lg:w-1/2 p-6 flex flex-col">
-          <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
-            <h2 class="font-gaegu text-2xl font-bold text-gray-800 mb-6 text-center">
+          <div class="rounded-2xl shadow-xl p-8" style="background: var(--bridal-heath); border: 1px solid var(--chrome-white);">
+            <h2 class="font-gaegu text-2xl font-bold mb-6 text-center" style="color: var(--slate-gray-dark);">
               Envíame un mensaje
             </h2>
             <form id="contact-form" action="">
               <div class="grid md:grid-cols-2 grid-cols-1 gap-x-8">
                 <div class="relative mb-6">
                   <input type="text" id="contact-name" name="name"
-                    class="block w-full h-11 px-5 py-2.5 bg-white leading-7 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-full placeholder-gray-400 focus:outline-none"
-                    placeholder="Name" required />
+                    class="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs rounded-full transition-all duration-300"
+                    style="background: var(--bridal-heath); color: var(--slate-gray-dark); border: 1px solid var(--chrome-white-dark);"
+                    placeholder="Name" required 
+                    onfocus="this.style.borderColor='var(--pixie-green)'"
+                    onblur="this.style.borderColor='var(--chrome-white-dark)'" />
                 </div>
                 <div class="relative mb-6">
                   <input type="text" id="contact-email" name="email"
-                    class="block w-full h-11 px-5 py-2.5 bg-white leading-7 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-full placeholder-gray-400 focus:outline-none"
-                    placeholder="Email Address" required />
+                    class="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs rounded-full transition-all duration-300"
+                    style="background: var(--bridal-heath); color: var(--slate-gray-dark); border: 1px solid var(--chrome-white-dark);"
+                    placeholder="Email Address" required 
+                    onfocus="this.style.borderColor='var(--pixie-green)'"
+                    onblur="this.style.borderColor='var(--chrome-white-dark)'" />
                 </div>
               </div>
               <div class="grid md:grid-cols-2 grid-cols-1 gap-x-8">
                 <div class="relative mb-6">
                   <input type="text" id="contact-phone" name="phone"
-                    class="block w-full h-11 px-5 py-2.5 bg-white leading-7 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-full placeholder-gray-400 focus:outline-none"
-                    placeholder="Phone Number" required />
+                    class="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs rounded-full transition-all duration-300"
+                    style="background: var(--bridal-heath); color: var(--slate-gray-dark); border: 1px solid var(--chrome-white-dark);"
+                    placeholder="Phone Number" required 
+                    onfocus="this.style.borderColor='var(--pixie-green)'"
+                    onblur="this.style.borderColor='var(--chrome-white-dark)'" />
                 </div>
                 <div class="relative mb-6">
                   <input type="text" id="contact-location" name="address"
-                    class="block w-full h-11 px-5 py-2.5 bg-white leading-7 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-full placeholder-gray-400 focus:outline-none"
-                    placeholder="City, Country" required />
+                    class="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs rounded-full transition-all duration-300"
+                    style="background: var(--bridal-heath); color: var(--slate-gray-dark); border: 1px solid var(--chrome-white-dark);"
+                    placeholder="City, Country" required 
+                    onfocus="this.style.borderColor='var(--pixie-green)'"
+                    onblur="this.style.borderColor='var(--chrome-white-dark)'" />
                 </div>
               </div>
               <div class="relative mb-6">
                 <input type="text" id="contact-topic" name="topic"
-                  class="block w-full h-11 px-5 py-2.5 bg-white leading-7 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-full placeholder-gray-400 focus:outline-none"
-                  placeholder="Topic" required />
+                  class="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs rounded-full transition-all duration-300"
+                  style="background: var(--bridal-heath); color: var(--slate-gray-dark); border: 1px solid var(--chrome-white-dark);"
+                  placeholder="Topic" required 
+                  onfocus="this.style.borderColor='var(--pixie-green)'"
+                  onblur="this.style.borderColor='var(--chrome-white-dark)'" />
               </div>
               <div class="relative mb-6">
                 <textarea type="text" id="contact-message" name="message"
-                  class="block w-full h-40 px-5 py-2.5 bg-white leading-7 resize-none text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-2xl placeholder-gray-400 focus:outline-none"
-                  placeholder="Your Message" required></textarea>
+                  class="block w-full h-40 px-5 py-2.5 leading-7 resize-none text-base font-normal shadow-xs rounded-2xl transition-all duration-300"
+                  style="background: var(--bridal-heath); color: var(--slate-gray-dark); border: 1px solid var(--chrome-white-dark);"
+                  placeholder="Your Message" required
+                  onfocus="this.style.borderColor='var(--pixie-green)'"
+                  onblur="this.style.borderColor='var(--chrome-white-dark)'"></textarea>
               </div>
               <div class="flex items-center justify-center">
-                <button
-                  class="w-52 h-12 bg-indigo-600 hover:bg-indigo-800 transition-all duration-700 rounded-full shadow-xs text-white text-base font-semibold leading-6">
+                <button class="w-52 h-12 transition-all duration-700 rounded-full shadow-xs text-white text-base font-semibold leading-6"
+                  style="background: var(--pixie-green-dark);"
+                  onmouseover="this.style.backgroundColor='var(--pixie-green)'"
+                  onmouseout="this.style.backgroundColor='var(--pixie-green-dark)'">
                   Send Message
                 </button>
               </div>
@@ -614,10 +624,10 @@
           </div>
         </div>
 
-        <!-- Contenedor del mapa (MEJORADO) -->
+        <!-- Contenedor del mapa -->
         <div class="w-full lg:w-1/2 p-6 flex justify-center items-start">
-          <div class="bg-white rounded-2xl shadow-xl p-6 border border-gray-100 w-full">
-            <h2 class="font-gaegu text-2xl font-bold text-gray-800 mb-6 text-center">
+          <div class="rounded-2xl shadow-xl p-6 w-full" style="background: var(--bridal-heath); border: 1px solid var(--chrome-white);">
+            <h2 class="font-gaegu text-2xl font-bold mb-6 text-center" style="color: var(--slate-gray-dark);">
               Mi Ubicación
             </h2>
             <div class="rounded-2xl overflow-hidden shadow-lg">
@@ -632,69 +642,88 @@
       </div>
     </section>
   </main>
-  <footer class="w-full container mx-auto bg-white py-8 border-t border-gray-400">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl mx-auto">
-        <a href="#home" class="flex justify-center">
-          <img id="footer-logo" class="w-40 h-30" alt="Proyecto Kain Logo" />
+<footer class="w-full py-8" style="background: var(--chrome-white); border-top: 2px solid var(--chrome-white-dark);">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mx-auto">
+      <a href="#home" class="flex justify-center">
+        <img id="footer-logo" class="w-40 h-30" alt="Proyecto Kain Logo" />
+      </a>
+      <ul class="text-lg flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-10 mb-10"
+        style="border-bottom: 1px solid var(--chrome-white-dark);">
+        <li>
+          <h1 class="transition-colors duration-300 font-gaegu" style="color: var(--slate-gray-dark);"
+            onmouseover="this.style.color='var(--pixie-green-dark)'"
+            onmouseout="this.style.color='var(--slate-gray-dark)'">Proyecto Kain</h1>
+        </li>
+      </ul>
+      <div class="flex space-x-6 md:space-x-10 justify-center items-center mb-10 flex-wrap">
+        <!-- Twitter -->
+        <a href="https://twitter.com/Proyecto_Kain"
+          class="block transition-all duration-500 transform hover:scale-110 m-2"
+          style="color: var(--pigeon-post);"
+          onmouseover="this.style.color='var(--pixie-green-dark)'"
+          onmouseout="this.style.color='var(--pigeon-post)'">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="32" height="32">
+            <path
+              d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+              fill="currentColor" />
+          </svg>
         </a>
-        <ul
-          class="text-lg flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-10 mb-10 border-b border-gray-200">
-          <li>
-            <h1 class="text-gray-800 hover:text-indigo-600 transition-colors duration-300 font-gaegu">Proyecto Kain</h1>
-          </li>
-        </ul>
-        <div class="flex space-x-10 justify-center items-center mb-10">
-          <!-- Twitter -->
-          <a href="https://twitter.com/Proyecto Kain"
-            class="block text-gray-900 transition-all duration-500 hover:text-indigo-600 transform hover:scale-110">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="32" height="32">
-              <path
-                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
-                fill="currentColor" />
-            </svg>
-          </a>
-          <!-- Instagram -->
-          <a href="https://www.instagram.com/proyecto_kain/"
-            class="block text-gray-900 transition-all duration-500 hover:text-indigo-600 transform hover:scale-110">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="32" height="32">
-              <path
-                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                fill="currentColor" />
-            </svg>
-          </a>
-          <!-- YouTube -->
-          <a href="https://www.youtube.com/channel/UCmad9TEHCPZl2tJbyyedNCw"
-            class="block text-gray-900 transition-all duration-500 hover:text-indigo-600 transform hover:scale-110">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="32" height="32">
-              <path
-                d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"
-                fill="currentColor" />
-            </svg>
-          </a>
-          <!-- Mail -->
-          <a href="mailto:proyectokain@gmail.com"
-            class="block text-gray-900 transition-all duration-500 hover:text-indigo-600 transform hover:scale-110">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="32" height="32">
-              <path
-                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
-                fill="currentColor" />
-            </svg>
-          </a>
-          <!-- TikTok -->
-          <a href="https://www.tiktok.com/@proyecto_kain?_t=8hS28msakw1&_r=1"
-            class="block text-gray-900 transition-all duration-500 hover:text-indigo-600 transform hover:scale-110">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="32" height="32">
-              <path
-                d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"
-                fill="currentColor" />
-            </svg>
-          </a>
-        </div>
-        <span class="text-lg text-gray-500 text-center block font-righteous">2025 Todos los derechos reservados</span>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/proyecto_kain/"
+          class="block transition-all duration-500 transform hover:scale-110 m-2"
+          style="color: var(--pigeon-post);"
+          onmouseover="this.style.color='var(--pixie-green-dark)'"
+          onmouseout="this.style.color='var(--pigeon-post)'">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="32" height="32">
+            <path
+              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+              fill="currentColor" />
+          </svg>
+        </a>
+        <!-- YouTube -->
+        <a href="https://www.youtube.com/channel/UCmad9TEHCPZl2tJbyyedNCw"
+          class="block transition-all duration-500 transform hover:scale-110 m-2"
+          style="color: var(--pigeon-post);"
+          onmouseover="this.style.color='var(--pixie-green-dark)'"
+          onmouseout="this.style.color='var(--pigeon-post)'">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="32" height="32">
+            <path
+              d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"
+              fill="currentColor" />
+          </svg>
+        </a>
+        <!-- Mail -->
+        <a href="mailto:proyectokain@gmail.com"
+          class="block transition-all duration-500 transform hover:scale-110 m-2"
+          style="color: var(--pigeon-post);"
+          onmouseover="this.style.color='var(--pixie-green-dark)'"
+          onmouseout="this.style.color='var(--pigeon-post)'">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="32" height="32">
+            <path
+              d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+              fill="currentColor" />
+          </svg>
+        </a>
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@proyecto_kain?_t=8hS28msakw1&_r=1"
+          class="block transition-all duration-500 transform hover:scale-110 m-2"
+          style="color: var(--pigeon-post);"
+          onmouseover="this.style.color='var(--pixie-green-dark)'"
+          onmouseout="this.style.color='var(--pigeon-post)'">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="32" height="32">
+            <path
+              d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"
+              fill="currentColor" />
+          </svg>
+        </a>
       </div>
+      <span class="text-lg text-center block font-righteous" style="color: var(--pigeon-post-light);">
+        © 2025 Todos los derechos reservados
+      </span>
     </div>
-  </footer>
+  </div>
+</footer>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>

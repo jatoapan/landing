@@ -1,4 +1,3 @@
-/* Estilos del carousel vertical */
 .vertical-slide-carousel .swiper-wrapper {
   width: 100%;
   height: max-content !important;
@@ -8,9 +7,27 @@
 }
 
 .vertical-slide-carousel .swiper-pagination-bullet {
-  background: #4f46e5;
+  background: var(--pigeon-post);
+  opacity: 0.6;
 }
 
 .vertical-slide-carousel .swiper-pagination-bullet-active {
-  background: #4f46e5 !important;
+  background: var(--pixie-green) !important;
+  opacity: 1;
+}
+
+.centered-slide-carousel .swiper-pagination-bullet {
+  background: var(--slate-gray);
+  opacity: 0.5;
+}
+
+.centered-slide-carousel .swiper-pagination-bullet-active {
+  background: var(--pixie-green) !important;
+  opacity: 1;
+}
+
+.swiper-slide {
+  background: var(--bridal-heath);
+  border-radius: 1rem;
+  overflow: hidden;
 }

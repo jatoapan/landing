@@ -3,16 +3,14 @@ import { storageRef } from '../config/firebase-config.js';
 export class StorageService {
   static async getProductImages(category) {
     try {
-      // Determinar la ruta correcta según la categoría
       let path;
       if (category === 'bars') {
-        path = 'bars'; // Ruta directa para bars
+        path = 'bars'; 
       } else if (category === 'one-piece-paintings') {
-        path = 'products/one-piece-paintings'; // Ruta para videos
+        path = 'products/one-piece-paintings'; 
       } else {
         path = `products/${category}`;
       }
-      
       const categoryRef = storageRef.child(path);
       const result = await categoryRef.listAll();
       return await Promise.all(result.items.map(item => item.getDownloadURL()));

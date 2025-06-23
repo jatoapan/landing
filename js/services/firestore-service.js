@@ -26,7 +26,6 @@ export class FirestoreService {
   }
 
   static async uploadCategories() {
-    // Mover la función uploadCategoriesToFirestore aquí
     try {
       const StorageService = await import('../services/storage-service.js');
       const categoriesData = await StorageService.StorageService.getFirstImageUrls();
@@ -34,7 +33,6 @@ export class FirestoreService {
         'Chibi', 'Emote', 'Medio Cuerpo', 'Cabeza', 'Icono', 'One Piece', 
         'Overwal', 'En Venta', 'Semi Realista', 'Fondo de Pantalla', 'Cuerpo Completo'
       ];
-      
       for (let i = 0; i < categoriesData.length; i++) {
         const data = categoriesData[i];
         const categoryName = categories[i];

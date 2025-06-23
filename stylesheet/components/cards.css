@@ -5,8 +5,54 @@
 .card-inner {
   position: relative;
   overflow: hidden;
+  background: var(--bridal-heath);
+  border: 1px solid var(--chrome-white);
+}
+
+.card-inner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(183, 211, 172, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.card-inner:hover::before {
+  left: 100%;
+}
+
+.card-inner:hover {
+  border-color: var(--pixie-green);
+  box-shadow: 0 8px 25px rgba(119, 132, 142, 0.15);
 }
 
 .glow-card:hover {
-  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  box-shadow: 0 0 20px rgba(183, 211, 172, 0.6);
+}
+
+.category-card {
+  background: var(--bridal-heath);
+  border: 1px solid var(--chrome-white);
+  transition: all 0.3s ease;
+}
+
+.category-card:hover {
+  background: var(--chrome-white);
+  border-color: var(--pixie-green);
+  transform: translateY(-5px);
+}
+
+/* Estilos para tarjetas de productos */
+.product-card {
+  background: var(--bridal-heath);
+  border: 1px solid var(--chrome-white-dark);
+}
+
+.product-card:hover {
+  background: white;
+  border-color: var(--pigeon-post);
+  box-shadow: 0 10px 30px rgba(112, 128, 144, 0.2);
 }

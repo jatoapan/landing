@@ -5,10 +5,8 @@ export class Carousel {
     try {
       const imageUrls = await StorageService.getProductImages('bars');
       const swiperWrapper = document.getElementById('swiper-wrapper');
-      
       if (swiperWrapper) {
         swiperWrapper.innerHTML = '';
-        
         imageUrls.forEach((url, index) => {
           const slideDiv = document.createElement('div');
           slideDiv.classList.add('swiper-slide');
@@ -19,9 +17,8 @@ export class Carousel {
           `;
           swiperWrapper.appendChild(slideDiv);
         });
-
         new Swiper(".vertical-slide-carousel", {
-          loop: imageUrls.length > 2, // ← FIX PARA EL WARNING
+          loop: imageUrls.length > 2,
           direction: "vertical",
           mousewheelControl: true,
           mousewheel: { releaseOnEdges: true },
@@ -43,10 +40,8 @@ export class Carousel {
       const result = await StorageService.getProductImages('one-piece-paintings');
       const videoFiles = result.filter(url => url.includes('.mp4'));
       const swiperWrapper = document.getElementById('swiper-wrapper-2');
-      
       if (swiperWrapper) {
         swiperWrapper.innerHTML = '';
-        
         videoFiles.forEach(videoUrl => {
           const slideDiv = document.createElement('div');
           slideDiv.classList.add('swiper-slide');
@@ -59,7 +54,6 @@ export class Carousel {
           `;
           swiperWrapper.appendChild(slideDiv);
         });
-
         new Swiper(".centered-slide-carousel", {
           centeredSlides: true,
           paginationClickable: true,
