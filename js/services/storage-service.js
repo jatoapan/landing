@@ -158,7 +158,7 @@ export class StorageService {
 
       document.getElementById('yes-image')?.setAttribute('src', yesImageUrl);
       document.getElementById('no-image')?.setAttribute('src', noImageUrl);
-      document.getElementById('thanks-image')?.setAttribute('src', termsImageUrl);
+      document.getElementById('terms-image')?.setAttribute('src', termsImageUrl);
       
       console.log('Terms images loaded successfully');
     } catch (error) {
