@@ -1,10 +1,10 @@
-import { StorageService } from './services/storage-service.js';
-import { Carousel } from './components/carousel.js';
-import { Categories } from './components/categories.js';
-import { Products } from './components/products.js';
-import { Testimonies } from './components/testimonies.js';
-import { Modal } from './components/modal.js';
-import { HeaderScroll } from './components/header.js';
+import { StorageService } from './assets/js/services/storage-service.js';
+import { Carousel } from './assets/js/components/carousel.js';
+import { Categories } from './assets/js/components/categories.js';
+import { Products } from './assets/js/components/products.js';
+import { Testimonies } from './assets/js/components/testimonies.js';
+import { Modal } from './assets/js/components/modal.js';
+import { HeaderScroll } from './assets/js/components/header.js';
 
 class App {
   constructor() {

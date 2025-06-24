@@ -1,6 +1,6 @@
-import { StorageService } from './services/storage-service.js';
-import { Carousel } from './components/carousel.js';
-import { HeaderScroll } from './components/header.js';
+import { StorageService } from './assets/js/services/storage-service.js';
+import { Carousel } from './assets/js/components/carousel.js';
+import { HeaderScroll } from './assets/js/components/header.js';
 
 class TermsApp {
   async init() {
