@@ -1,12 +1,13 @@
 {
+  "version": 2,
   "routes": [
-    {
-      "src": "/terms",
-      "dest": "/terms.html"
-    },
     {
       "src": "/",
       "dest": "/index.html"
+    },
+    {
+      "src": "/terms",
+      "dest": "/terms.html"
     }
   ]
 }
