@@ -1,16 +1,24 @@
 {
-  "routes": [
+  "functions": {
+    "js/**/*.js": {
+      "maxDuration": 30
+    }
+  },
+  "rewrites": [
     {
-      "src": "/terms",
-      "dest": "/terms.html"
-    },
+      "source": "/terms",
+      "destination": "/terms.html"
+    }
+  ],
+  "headers": [
     {
-      "src": "/terms.html",
-      "dest": "/terms.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, must-revalidate"
+        }
+      ]
     }
   ]
 }
