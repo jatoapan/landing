@@ -1,16 +1,12 @@
 {
-  "builds": [
-    {
-      "src": "index.html"
-    },
-    {
-      "src": "terms.html"
-    }
-  ],
   "routes": [
     {
       "src": "/terms",
       "dest": "/terms.html"
+    },
+    {
+      "src": "/",
+      "dest": "/index.html"
     }
   ]
 }
