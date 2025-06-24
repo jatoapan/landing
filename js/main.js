@@ -4,6 +4,7 @@ import { Categories } from './components/categories.js';
 import { Products } from './components/products.js';
 import { Testimonies } from './components/testimonies.js';
 import { Modal } from './components/modal.js';
+import { HeaderScroll } from './components/header.js';
 
 class App {
   constructor() {
@@ -14,16 +15,33 @@ class App {
 
   async init() {
     try {
-      await StorageService.loadLogos();
-      await StorageService.loadAboutImage();
-      await Carousel.initVerticalCarousel();
-      await Carousel.initHorizontalCarousel();
-      await Categories.render();
-      await this.products.renderAllProducts();
-      await this.testimonies.render();
-      console.log('App initialized successfully');
+      // Precargar imágenes críticas primero
+      const preloadPromise = StorageService.preloadCriticalImages();
+      
+      // Cargar en paralelo otros servicios no críticos
+      const parallelPromises = [
+        StorageService.loadLogos(),
+        StorageService.loadAboutImage(),
+        HeaderScroll.init()
+      ];
+
+      // Inicializar carruseles y components
+      const componentPromises = [
+        Carousel.initVerticalCarousel(),
+        Carousel.initHorizontalCarousel(),
+        Categories.render(),
+        this.products.renderAllProducts(),
+        this.testimonies.render()
+      ];
+
+      // Ejecutar en fases para optimizar la percepción de velocidad
+      await Promise.all(parallelPromises);
+      await Promise.all(componentPromises);
+      await preloadPromise;
+
+      console.log('🚀 App initialized successfully with caching');
     } catch (error) {
-      console.error('Error initializing app:', error);
+      console.error('❌ Error initializing app:', error);
     }
   }
 }

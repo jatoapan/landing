@@ -2,38 +2,36 @@ import { StorageService } from '../services/storage-service.js';
 
 export class Carousel {
   static async initVerticalCarousel() {
-    try {
-      const imageUrls = await StorageService.getProductImages('bars');
-      const swiperWrapper = document.getElementById('swiper-wrapper');
-      if (swiperWrapper) {
-        swiperWrapper.innerHTML = '';
-        imageUrls.forEach((url, index) => {
-          const slideDiv = document.createElement('div');
-          slideDiv.classList.add('swiper-slide');
-          slideDiv.innerHTML = `
-            <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
-              <img src="${url}" alt="Slide ${index + 1}" class="w-full h-full object-cover object-center rounded-2xl" />
-            </div>
-          `;
-          swiperWrapper.appendChild(slideDiv);
-        });
-        new Swiper(".vertical-slide-carousel", {
-          loop: imageUrls.length > 2,
-          direction: "vertical",
-          mousewheelControl: true,
-          mousewheel: { releaseOnEdges: true },
-          spaceBetween: 30,
-          grabCursor: true,
-          pagination: { el: ".swiper-pagination", clickable: true },
-          autoplay: { delay: 2500, disableOnInteraction: false }
-        });
-      } else {
-        console.error("No se encontró el contenedor para el primer carrusel.");
+      try {
+        const imageUrls = await StorageService.getProductImages('bars');
+        const swiperWrapper = document.getElementById('swiper-wrapper');
+        if (swiperWrapper) {
+          swiperWrapper.innerHTML = '';
+          imageUrls.forEach((url, index) => {
+            const slideDiv = document.createElement('div');
+            slideDiv.classList.add('swiper-slide');
+            slideDiv.innerHTML = `
+              <img src="${url}" alt="Slide ${index + 1}" class="w-full h-full object-cover rounded-2xl" />
+            `;
+            swiperWrapper.appendChild(slideDiv);
+          });
+          new Swiper(".vertical-slide-carousel", {
+            loop: imageUrls.length > 2,
+            direction: "vertical",
+            mousewheelControl: true,
+            mousewheel: { releaseOnEdges: true },
+            spaceBetween: 30,
+            grabCursor: true,
+            pagination: { el: ".swiper-pagination", clickable: true },
+            autoplay: { delay: 2500, disableOnInteraction: false }
+          });
+        } else {
+          console.error("No se encontró el contenedor para el primer carrusel.");
+        }
+      } catch (error) {
+        console.error("Error al cargar las imágenes del primer carrusel:", error);
       }
-    } catch (error) {
-      console.error("Error al cargar las imágenes del primer carrusel:", error);
     }
-  }
 
   static async initHorizontalCarousel() {
     try {
@@ -46,7 +44,8 @@ export class Carousel {
           const slideDiv = document.createElement('div');
           slideDiv.classList.add('swiper-slide');
           slideDiv.innerHTML = `
-            <div class="bg-indigo-50 rounded-2xl aspect-square flex justify-center items-center">
+            <div class="rounded-2xl aspect-square flex justify-center items-center transition-all duration-300 hover:shadow-xl" 
+                 style="background: var(--background); border: 1px solid var(--neutral); box-shadow: 0 4px 15px rgba(112, 128, 144, 0.1);">
               <video class="h-full w-full object-cover rounded-2xl" autoplay loop muted style="pointer-events: none">
                 <source src="${videoUrl}" type="video/mp4" />
               </video>

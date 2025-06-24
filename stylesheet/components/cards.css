@@ -5,8 +5,8 @@
 .card-inner {
   position: relative;
   overflow: hidden;
-  background: var(--bridal-heath);
-  border: 1px solid var(--chrome-white);
+  background: var(--background);
+  border: 1px solid var(--neutral);
 }
 
 .card-inner::before {
@@ -25,8 +25,8 @@
 }
 
 .card-inner:hover {
-  border-color: var(--pixie-green);
-  box-shadow: 0 8px 25px rgba(119, 132, 142, 0.15);
+  border-color: var(--accent);
+  box-shadow: 0 8px 25px rgba(112, 128, 144, 0.15);
 }
 
 .glow-card:hover {
@@ -34,25 +34,37 @@
 }
 
 .category-card {
-  background: var(--bridal-heath);
-  border: 1px solid var(--chrome-white);
+  background: var(--background);
+  border: 1px solid var(--neutral);
   transition: all 0.3s ease;
 }
 
 .category-card:hover {
-  background: var(--chrome-white);
-  border-color: var(--pixie-green);
+  background: var(--neutral);
+  border-color: var(--accent);
   transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(183, 211, 172, 0.2);
 }
 
-/* Estilos para tarjetas de productos */
 .product-card {
-  background: var(--bridal-heath);
-  border: 1px solid var(--chrome-white-dark);
+  background: var(--background);
+  border: 1px solid var(--neutral);
 }
 
 .product-card:hover {
-  background: white;
-  border-color: var(--pigeon-post);
+  background: var(--neutral);
+  border-color: var(--secondary);
   box-shadow: 0 10px 30px rgba(112, 128, 144, 0.2);
+}
+
+.testimony-card {
+  background: var(--background);
+  border: 1px solid var(--neutral);
+  box-shadow: 0 8px 25px rgba(112, 128, 144, 0.1);
+}
+
+.testimony-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 15px 35px rgba(183, 211, 172, 0.2);
+  transform: translateY(-3px);
 }

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Términos y Condiciones - Proyecto Kain</title>
+  <link rel="icon" id="header-logo" type="image/png" href="" />
+  <meta name="description" content="Términos y Condiciones - Proyecto Kain" />
+  <meta name="keywords" content="css, html, tailwind, javascript, flowbite, swiper" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=font-gaegu&family=font-righteous&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./stylesheet/styles.css">
+  <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-database-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-storage-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+  <script type="module" src="./js/terms.js"></script>
+</head>
+
+<body style="background: var(--background);" class="text-gray-600 work-sans leading-normal text-base tracking-normal">
+
+  <!-- Header IGUAL al index -->
+  <header id="home" class="py-8">
+    <nav style="background: var(--background); border-color: var(--neutral);"
+      class="border-b-2 fixed top-0 left-0 right-0 z-50 py-8 shadow-sm w-full">
+      <div class="max-w-full flex flex-wrap items-center justify-around mx-auto p-4">
+        <div class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img id="header-logo-img" class="w-20 h-10" alt="Proyecto Kain Logo" src="" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap font-gaegu"
+            style="color: var(--secondary);">Proyecto Kain</span>
+        </div>
+        <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+          <button type="button" data-dropdown-toggle="language-dropdown-menu"
+            class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm rounded-lg cursor-pointer transition-all duration-300 font-righteous"
+            style="color: var(--primary); border: 1px solid var(--neutral);"
+            onmouseover="this.style.backgroundColor='var(--accent)'; this.style.color='var(--background)'"
+            onmouseout="this.style.backgroundColor='transparent'; this.style.color='var(--primary)'">
+            <svg class="w-5 h-5 rounded-full me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+              <path fill="#c41e3a" d="M0 0h512v512H0z" />
+              <path fill="#ffc400" d="M0 128h512v256H0z" />
+            </svg>
+            Español (España)
+          </button>
+          <div class="z-50 hidden my-4 text-base list-none divide-y rounded-lg shadow-sm"
+            style="background: var(--background); border: 1px solid var(--neutral);" id="language-dropdown-menu">
+            <ul class="py-2 font-medium font-righteous" role="none">
+              <li>
+                <a href="#" class="block px-4 py-2 text-sm transition-colors duration-300"
+                  style="color: var(--primary);"
+                  onmouseover="this.style.backgroundColor='var(--accent)'; this.style.color='var(--background)'"
+                  onmouseout="this.style.backgroundColor='transparent'; this.style.color='var(--primary)'"
+                  role="menuitem">
+                  <div class="inline-flex items-center">
+                    <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full me-2" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512">
+                      <path fill="#c41e3a" d="M0 0h512v512H0z" />
+                      <path fill="#ffc400" d="M0 128h512v256H0z" />
+                    </svg>
+                    Español (España)
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 text-sm transition-colors duration-300"
+                  style="color: var(--primary);"
+                  onmouseover="this.style.backgroundColor='var(--accent)'; this.style.color='var(--background)'"
+                  onmouseout="this.style.backgroundColor='transparent'; this.style.color='var(--primary)'"
+                  role="menuitem">
+                  <div class="inline-flex items-center">
+                    <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full me-2" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512">
+                      <path fill="#b22234" d="M0 0h512v512H0z" />
+                      <path d="M0 58h512M0 137h512M0 216h512M0 295h512M0 374h512M0 453h512" stroke="#fff"
+                        stroke-width="39" />
+                      <path fill="#3c3b6e" d="M0 0h256v278H0z" />
+                    </svg>
+                    English (US)
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button data-collapse-toggle="navbar-language" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden transition-all duration-300"
+            style="color: var(--primary); border: 1px solid var(--neutral);"
+            onmouseover="this.style.backgroundColor='var(--accent)'"
+            onmouseout="this.style.backgroundColor='transparent'" aria-controls="navbar-language" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
+          <ul
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:background: var(--background);"
+            style="background: var(--background); border-color: var(--neutral);">
+            <li class="mr-0">
+              <a href="index.html" class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
+                style="color: var(--secondary);" onmouseover="this.style.color='var(--accent)'"
+                onmouseout="this.style.color='var(--secondary)'">Inicio</a>
+            </li>
+            <li>
+              <a href="index.html#about"
+                class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
+                style="color: var(--secondary);" onmouseover="this.style.color='var(--accent)'"
+                onmouseout="this.style.color='var(--secondary)'">¿Quién Soy?</a>
+            </li>
+            <li>
+              <a href="index.html#categories"
+                class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
+                style="color: var(--secondary);" onmouseover="this.style.color='var(--accent)'"
+                onmouseout="this.style.color='var(--secondary)'">Categorías</a>
+            </li>
+            <li>
+              <a href="index.html#products"
+                class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
+                style="color: var(--secondary);" onmouseover="this.style.color='var(--accent)'"
+                onmouseout="this.style.color='var(--secondary)'">Productos</a>
+            </li>
+            <li>
+              <a href="index.html#values"
+                class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
+                style="color: var(--secondary);" onmouseover="this.style.color='var(--accent)'"
+                onmouseout="this.style.color='var(--secondary)'">Valores</a>
+            </li>
+            <li>
+              <a href="index.html#testimonies"
+                class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
+                style="color: var(--secondary);" onmouseover="this.style.color='var(--accent)'"
+                onmouseout="this.style.color='var(--secondary)'">Testimonios</a>
+            </li>
+            <li>
+              <a href="index.html#contact"
+                class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
+                style="color: var(--secondary);" onmouseover="this.style.color='var(--accent)'"
+                onmouseout="this.style.color='var(--secondary)'">Contacto</a>
+            </li>
+            <li>
+              <a href="terms.html" class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
+                style="color: var(--accent);" onmouseover="this.style.color='var(--primary)'"
+                onmouseout="this.style.color='var(--accent)'">Términos y Condiciones</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section style="background: var(--background);">
+      <div class="w-full relative">
+        <div class="swiper vertical-slide-carousel swiper-container relative h-96">
+          <div class="swiper-wrapper" id="swiper-wrapper">
+            <!-- Los slides se agregarán dinámicamente -->
+          </div>
+          <div class="swiper-pagination !right-10 !left-full !top-1/3 !translate-y-8"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Términos y Condiciones -->
+    <section id="terms" class="py-12" style="background: var(--background);">
+      <div class="container py-4 px-6 mx-auto flex justify-center">
+        <h1 class="font-gaegu text-4xl font-bold tracking-wide mt-2 mb-2" style="color: var(--primary);">
+          Términos y Condiciones
+        </h1>
+      </div>
+
+      <!-- Sección de características embebida -->
+      <div class="container mx-auto px-6 py-8 space-y-12">
+
+        <!-- Fila 1: Cosas que SÍ haré -->
+        <div
+          class="flex flex-col md:flex-row items-center gap-8 p-8 rounded-xl shadow-lg transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] min-h-[420px]"
+          style="background: var(--background); border: 1px solid var(--neutral);">
+          <!-- Contenido de texto -->
+          <div class="flex-1">
+            <div class="flex items-center mb-6">
+              <div class="rounded-full flex justify-center items-center mr-4 w-16 h-16"
+                style="background: linear-gradient(135deg, var(--accent), var(--primary)); box-shadow: 0 8px 20px rgba(0,0,0,0.15);">
+                <svg width="32" height="32" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5 20L8.75 16.25L10.625 14.375L12.5 16.25L19.375 9.375L21.25 11.25L12.5 20Z" fill="white"
+                    stroke="white" stroke-width="1"></path>
+                </svg>
+              </div>
+              <h2 class="font-gaegu text-3xl font-bold tracking-wide" style="color: var(--primary);">Cosas que SÍ haré</h2>
+            </div>
+
+            <ul class="space-y-3 list-disc list-inside mb-8">
+              <li class="font-righteous text-base text-justify" style="color: var(--secondary);">Dibujos gore</li>
+              <li class="font-righteous text-base text-justify" style="color: var(--secondary);">Si es un retrato,
+                necesitaré muchas fotos de referencia de su rostro o aspecto físico</li>
+              <li class="font-righteous text-base text-justify" style="color: var(--secondary);">Ropa detallada, armas o
+                armaduras</li>
+              <li class="font-righteous text-base text-justify" style="color: var(--secondary);">Personajes originales o
+                Fanarts</li>
+              <li class="font-righteous text-base text-justify" style="color: var(--secondary);">Dibujar con un estilo
+                en específico, ya sea cartoon o anime</li>
+            </ul>
+
+            <h3 class="font-gaegu text-xl font-bold tracking-wide mb-4" style="color: var(--primary);">Agregaciones</h3>
+            <ul class="space-y-3 list-disc list-inside">
+              <li class="font-righteous text-base text-justify" style="color: var(--secondary);">Animales o criaturas
+                simples +30% del precio base</li>
+              <li class="font-righteous text-base text-justify" style="color: var(--secondary);">Personas +60% del
+                precio base</li>
+              <li class="font-righteous text-base text-justify" style="color: var(--secondary);">Criaturas místicas +50%
+                del precio base</li>
+              <li class="font-righteous text-base text-justify" style="color: var(--secondary);">Background +40% del
+                precio base</li>
+            </ul>
+          </div>
+
+          <!-- Imagen de Firebase -->
+          <div class="flex-shrink-0">
+            <img id="yes-image" class="w-64 h-64 object-cover rounded-xl shadow-lg" alt="Cosas que sí haré" src="https://via.placeholder.com/256x256/51cf66/ffffff?text=Cargando..." />
+          </div>
+        </div>
+
+        <!-- Fila 2: Cosas que NO haré -->
+        <div
+          class="flex flex-col md:flex-row-reverse items-center gap-8 p-8 rounded-xl shadow-lg transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] min-h-[420px]"
+          style="background: var(--background); border: 1px solid var(--neutral);">
+          <!-- Contenido de texto -->
+          <div class="flex-1">
+            <div class="flex items-center mb-6">
+              <div class="rounded-full flex justify-center items-center mr-4 w-16 h-16"
+                style="background: linear-gradient(135deg, #ef4444, #dc2626); box-shadow: 0 8px 20px rgba(239,68,68,0.3);">
+                <svg width="32" height="32" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21.25 8.75L8.75 21.25M8.75 8.75L21.25 21.25" stroke="white" stroke-width="3"
+                    stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <h2 class="font-gaegu text-3xl font-bold tracking-wide" style="color: var(--primary);">Cosas que NO haré</h2>
+            </div>
+
+            <ul class="space-y-3 list-disc list-inside">
+              <li class="font-righteous text-base text-justify" style="color: var(--secondary);">Furros, desnudos o
+                fetiches</li>
+              <li class="font-righteous text-base text-justify" style="color: var(--secondary);">Contenido ofensivo de
+                cultura, religión o de protesta política</li>
+              <li class="font-righteous text-base text-justify" style="color: var(--secondary);">Logos o diseños de
+                marca</li>
+            </ul>
+          </div>
+
+          <!-- Imagen de Firebase -->
+          <div class="flex-shrink-0">
+            <img id="no-image" class="w-64 h-64 object-cover rounded-xl shadow-lg" alt="Cosas que no haré" src="https://via.placeholder.com/256x256/ff6b6b/ffffff?text=Cargando..." />
+          </div>
+        </div>
+
+        <!-- Fila 3: Términos y Condiciones -->
+        <div
+          class="flex flex-col md:flex-row items-center gap-8 p-8 rounded-xl shadow-lg transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] min-h-[420px]"
+          style="background: var(--background); border: 1px solid var(--neutral);">
+          <!-- Contenido de texto -->
+          <div class="flex-1">
+            <div class="flex items-center mb-6">
+              <div class="rounded-full flex justify-center items-center mr-4 w-16 h-16"
+                style="background: linear-gradient(135deg, var(--primary), var(--secondary)); box-shadow: 0 8px 20px rgba(0,0,0,0.15);">
+                <svg width="32" height="32" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.5 10H22.5M7.5 15H22.5M7.5 20H15M5 5H25C25.2761 5 25.5 5.22386 25.5 5.5V24.5C25.5 24.7761 25.2761 25 25 25H5C4.72386 25 4.5 24.7761 4.5 24.5V5.5C4.5 5.22386 4.72386 5 5 5Z"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+                </svg>
+              </div>
+              <h2 class="font-gaegu text-3xl font-bold tracking-wide" style="color: var(--primary);">Términos y Condiciones</h2>
+            </div>
+
+            <ul class="space-y-3 list-disc list-inside">
+              <li class="font-righteous text-base text-justify" style="color: var(--secondary);">Si el pedido tiene una
+                fecha específica de entrega se deberá avisar con 2 días de anticipación</li>
+              <li class="font-righteous text-base text-justify" style="color: var(--secondary);">No se aceptará
+                reembolsos</li>
+              <li class="font-righteous text-base text-justify" style="color: var(--secondary);">El tiempo que puede
+                tardar en recibir su comisión es de aproximadamente de 1 a 2 semana</li>
+              <li class="font-righteous text-base text-justify" style="color: var(--secondary);">Recibirá bocetos de su
+                pedido para que inspeccione las correcciones necesarias antes de comenzar el trabajo completo</li>
+              <li class="font-righteous text-base text-justify" style="color: var(--secondary);">Las obras son para USO
+                PERSONAL, está prohibido la comercialización de mis comisiones o la reventa del mismo</li>
+              <li class="font-righteous text-base text-justify" style="color: var(--secondary);">Da créditos si públicas
+                o realizas mención de la comisión</li>
+              <li class="font-righteous text-base text-justify" style="color: var(--secondary);">Si deseas realizar
+                alguna propina bienvenida sea y se les agradece mucho :D</li>
+            </ul>
+          </div>
+
+          <!-- Imagen de Firebase -->
+          <div class="flex-shrink-0">
+            <img id="thanks-image" class="w-64 h-64 object-cover rounded-xl shadow-lg" alt="Términos y condiciones" src="https://via.placeholder.com/256x256/845ef7/ffffff?text=Cargando..." />
+          </div>
+        </div>
+
+        <!-- Fila 4: Método de Pago -->
+        <div
+          class="flex flex-col md:flex-row-reverse items-center gap-8 p-8 rounded-xl shadow-lg transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] min-h-[420px]"
+          style="background: var(--background); border: 1px solid var(--neutral);">
+          <!-- Contenido de texto -->
+          <div class="flex-1">
+            <div class="flex items-center mb-6">
+              <div class="rounded-full flex justify-center items-center mr-4 w-16 h-16"
+                style="background: linear-gradient(135deg, var(--secondary), var(--primary)); box-shadow: 0 8px 20px rgba(0,0,0,0.15);">
+                <svg width="28" height="28" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" fill="white">
+                  <path
+                    d="M64 32C28.7 32 0 60.7 0 96l0 32 576 0 0-32c0-35.3-28.7-64-64-64L64 32zM576 224L0 224 0 416c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-192zM112 352l64 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-64 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm112 16c0-8.8 7.2-16 16-16l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16z" />
+                </svg>
+              </div>
+              <h2 class="font-gaegu text-3xl font-bold tracking-wide" style="color: var(--primary);">Método de Pago</h2>
+            </div>
+
+            <ul class="space-y-3 list-disc list-inside">
+              <li class="font-righteous text-base text-justify" style="color: var(--secondary);">El pago es a través de
+                facturas de PayPal o transferencia bancarias si eres de Ecuador</li>
+              <li class="font-righteous text-base text-justify" style="color: var(--secondary);">Los pagos son 50% por
+                adelantado, una vez hecho el pago inicial iniciaré su pedido</li>
+              <li class="font-righteous text-base text-justify" style="color: var(--secondary);">Una vez que llegue el
+                día de la entrega se realiza primero el pago final, una vez confirmado la transacción se procederá a
+                entregar la comisión</li>
+              <li class="font-righteous text-base text-justify" style="color: var(--secondary);">En el caso de los
+                chibis, overwals, iconos y emotes, es un solo pago completo</li>
+            </ul>
+          </div>
+
+          <!-- Imagen con SVG personalizado -->
+          <div class="flex-shrink-0">
+            <div class="w-64 h-64 rounded-xl shadow-lg flex items-center justify-center"
+              style="background: linear-gradient(135deg, var(--accent), var(--primary));">
+              <svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Tarjeta principal -->
+                <rect x="20" y="35" width="100" height="70" rx="8" fill="white" stroke="white" stroke-width="2"/>
+                
+                <!-- Banda magnética -->
+                <rect x="20" y="50" width="100" height="12" fill="#2563eb"/>
+                
+                <!-- Chip -->
+                <rect x="30" y="70" width="16" height="12" fill="#fbbf24" rx="2"/>
+                <rect x="32" y="72" width="12" height="8" fill="#f59e0b" rx="1"/>
+                
+                <!-- Números -->
+                <rect x="30" y="88" width="6" height="1" fill="#6b7280"/>
+                <rect x="38" y="88" width="6" height="1" fill="#6b7280"/>
+                <rect x="46" y="88" width="6" height="1" fill="#6b7280"/>
+                <rect x="54" y="88" width="6" height="1" fill="#6b7280"/>
+                
+                <!-- Logo PayPal -->
+                <circle cx="95" cy="85" r="8" fill="white" stroke="#0070f3" stroke-width="2"/>
+                <text x="95" y="89" font-family="Arial" font-size="8" font-weight="bold" fill="#0070f3" text-anchor="middle">P</text>
+                
+                <!-- Símbolo $ -->
+                <circle cx="70" cy="20" r="8" fill="white"/>
+                <text x="70" y="25" font-family="Arial" font-size="12" font-weight="bold" fill="#059669" text-anchor="middle">$</text>
+                
+                <!-- Monedas flotantes -->
+                <circle cx="25" cy="25" r="5" fill="white" opacity="0.8"/>
+                <text x="25" y="28" font-family="Arial" font-size="6" fill="#f59e0b" text-anchor="middle">¢</text>
+                
+                <circle cx="115" cy="25" r="5" fill="white" opacity="0.8"/>
+                <text x="115" y="28" font-family="Arial" font-size="6" fill="#059669" text-anchor="middle">€</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sección de contacto final mejorada -->
+        <div class="text-center mt-16 p-12 rounded-2xl" style="background: linear-gradient(135deg, var(--neutral), var(--background)); border: 2px solid var(--accent);">
+          <div class="max-w-2xl mx-auto">
+            <h2 class="font-gaegu text-4xl font-bold tracking-wide mb-6" style="color: var(--primary);">
+              ¿Interesado en una comisión?
+            </h2>
+            <p class="font-righteous text-lg mb-8 leading-relaxed" style="color: var(--secondary);">
+              Si estás interesado en comprar alguna comisión, no dudes en contactarme. Estaré encantado de trabajar contigo para crear algo único y especial.
+            </p>
+            <a href="index.html#contact"
+              class="inline-flex items-center px-12 py-4 rounded-full font-righteous text-lg font-semibold transition-all duration-500 transform hover:scale-110 hover:shadow-2xl"
+              style="background: linear-gradient(135deg, var(--accent), var(--primary)); color: var(--background); box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+              <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+              </svg>
+              Contáctame Ahora
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="w-full py-8" style="background: var(--neutral); border-top: 2px solid var(--neutral);">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto">
+        <div class="flex justify-center">
+          <img id="footer-logo" class="w-40 h-30" alt="Proyecto Kain Logo" />
+        </div>
+        <ul
+          class="text-lg flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-2 mb-10"
+          style="border-bottom: 1px solid var(--neutral);">
+          <li>
+            <h1 class="transition-colors duration-300 font-gaegu" style="color: var(--primary);"
+              onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--primary)'">Proyecto
+              Kain</h1>
+          </li>
+        </ul>
+        <div class="flex space-x-6 md:space-x-10 justify-center items-center mb-10 flex-wrap">
+          <!-- Twitter -->
+          <a href="https://twitter.com/Proyecto_Kain"
+            class="block transition-all duration-500 transform hover:scale-110 m-2" style="color: var(--secondary);"
+            onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--secondary)'">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="32" height="32">
+              <path
+                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                fill="currentColor" />
+            </svg>
+          </a>
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/proyecto_kain/"
+            class="block transition-all duration-500 transform hover:scale-110 m-2" style="color: var(--secondary);"
+            onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--secondary)'">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="32" height="32">
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                fill="currentColor" />
+            </svg>
+          </a>
+          <!-- YouTube -->
+          <a href="https://www.youtube.com/channel/UCmad9TEHCPZl2tJbyyedNCw"
+            class="block transition-all duration-500 transform hover:scale-110 m-2" style="color: var(--secondary);"
+            onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--secondary)'">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="32" height="32">
+              <path
+                d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"
+                fill="currentColor" />
+            </svg>
+          </a>
+          <!-- Mail -->
+          <a href="mailto:proyectokain@gmail.com"
+            class="block transition-all duration-500 transform hover:scale-110 m-2" style="color: var(--secondary);"
+            onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--secondary)'">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="32" height="32">
+              <path
+                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                fill="currentColor" />
+            </svg>
+          </a>
+          <!-- TikTok -->
+          <a href="https://www.tiktok.com/@proyecto_kain?_t=8hS28msakw1&_r=1"
+            class="block transition-all duration-500 transform hover:scale-110 m-2" style="color: var(--secondary);"
+            onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--secondary)'">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="32" height="32">
+              <path
+                d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"
+                fill="currentColor" />
+            </svg>
+          </a>
+        </div>
+        <span class="text-lg text-center block font-righteous" style="color: var(--secondary);">
+          © 2025 Todos los derechos reservados
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>

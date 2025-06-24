@@ -1,33 +1,68 @@
 .vertical-slide-carousel .swiper-wrapper {
+  align-items: center;
+}
+
+.vertical-slide-carousel .swiper-slide {
+  text-align: center;
+  background: var(--background);
+  border: 1px solid var(--neutral);
+  border-radius: 1rem;
+  padding: 0;
+  margin: 0.5rem 0;
+  height: 400px;
+}
+
+.vertical-slide-carousel .swiper-slide img {
   width: 100%;
-  height: max-content !important;
-  padding-bottom: 64px !important;
-  transition-timing-function: linear !important;
-  position: relative;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
 }
 
 .vertical-slide-carousel .swiper-pagination-bullet {
-  background: var(--pigeon-post);
-  opacity: 0.6;
+  background: var(--neutral);
+  opacity: 0.5;
 }
 
 .vertical-slide-carousel .swiper-pagination-bullet-active {
-  background: var(--pixie-green) !important;
+  background: var(--accent);
   opacity: 1;
 }
 
+/* Estilos para el segundo carrusel horizontal */
 .centered-slide-carousel .swiper-pagination-bullet {
-  background: var(--slate-gray);
+  background: var(--neutral);
   opacity: 0.5;
 }
 
 .centered-slide-carousel .swiper-pagination-bullet-active {
-  background: var(--pixie-green) !important;
+  background: var(--accent);
   opacity: 1;
 }
 
-.swiper-slide {
-  background: var(--bridal-heath);
-  border-radius: 1rem;
-  overflow: hidden;
+.horizontal-carousel .swiper-slide {
+  background: var(--background);
+  border: 1px solid var(--neutral);
+  border-radius: 0.75rem;
+}
+
+.horizontal-carousel .swiper-slide:hover {
+  background: var(--neutral);
+  border-color: var(--accent);
+}
+
+.carousel-navigation {
+  color: var(--secondary);
+}
+
+.carousel-navigation:hover {
+  color: var(--primary);
+}
+
+.carousel-pagination .swiper-pagination-bullet {
+  background: var(--neutral);
+}
+
+.carousel-pagination .swiper-pagination-bullet-active {
+  background: var(--accent);
 }

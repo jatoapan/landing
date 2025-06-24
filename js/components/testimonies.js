@@ -18,7 +18,10 @@ export class Testimonies {
           'card-animate', 'opacity-0', 'transform', '-translate-x-full', 'rotate-y-90'
         );
         testimonyElement.innerHTML = `
-          <div class="card-inner transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:-rotate-1 rounded-2xl overflow-hidden cursor-pointer" style="background: var(--bridal-heath); border: 1px solid var(--chrome-white);">
+          <div class="card-inner transform transition-all duration-500 hover:scale-105 hover:-rotate-1 rounded-2xl overflow-hidden cursor-pointer" 
+               style="background: var(--background); border: 1px solid var(--neutral); box-shadow: 0 8px 25px rgba(112, 128, 144, 0.1);"
+               onmouseover="this.style.boxShadow='0 15px 35px rgba(183, 211, 172, 0.2)'"
+               onmouseout="this.style.boxShadow='0 8px 25px rgba(112, 128, 144, 0.1)'">
             <div class="overflow-hidden">
               <img class="w-full h-64 object-cover transition-all duration-500 hover:scale-110 hover:sepia" 
                    src="${testimony.imageUrl}" 
@@ -26,15 +29,15 @@ export class Testimonies {
             </div>
             <div class="p-6">
               <div class="flex items-center justify-between mb-3">
-                <p class="font-righteous text-sm" style="color: var(--pigeon-post);">Testimonio</p>
+                <p class="font-righteous text-sm" style="color: var(--primary);">Testimonio</p>
                 <div class="flex space-x-1">
-                  <div class="w-2 h-2 rounded-full bounce-colors"></div>
-                  <div class="w-2 h-2 rounded-full bounce-colors" style="animation-delay: 0.1s"></div>
-                  <div class="w-2 h-2 rounded-full bounce-colors" style="animation-delay: 0.2s"></div>
+                  <div class="w-2 h-2 rounded-full bounce-colors" style="background: var(--accent); box-shadow: 0 0 8px rgba(183, 211, 172, 0.5);"></div>
+                  <div class="w-2 h-2 rounded-full bounce-colors" style="background: var(--accent); animation-delay: 0.1s; box-shadow: 0 0 8px rgba(183, 211, 172, 0.5);"></div>
+                  <div class="w-2 h-2 rounded-full bounce-colors" style="background: var(--accent); animation-delay: 0.2s; box-shadow: 0 0 8px rgba(183, 211, 172, 0.5);"></div>
                 </div>
               </div>
-              <h4 class="font-gaegu text-lg font-bold tracking-wide mb-3" style="color: var(--slate-gray-dark);">${testimony.title}</h4>
-              <p class="font-righteous text-sm text-justify leading-relaxed" style="color: var(--pigeon-post-light);">${testimony.description}</p>
+              <h4 class="font-gaegu text-lg font-bold tracking-wide mb-3" style="color: var(--primary);">${testimony.title}</h4>
+              <p class="font-righteous text-sm text-justify leading-relaxed" style="color: var(--secondary);">${testimony.description}</p>
             </div>
           </div>
         `;

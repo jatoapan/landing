@@ -1,15 +1,7 @@
 :root {
-  --pigeon-post: #77848e;
-  --slate-gray: #708090;
-  --chrome-white: #cac7b7;
-  --pixie-green: #b7d3ac;
-  --bridal-heath: #fffaf4;
-  
-  --pigeon-post-light: #9ba3ab;
-  --pigeon-post-dark: #5a6570;
-  --slate-gray-light: #8a96a6;
-  --slate-gray-dark: #596872;
-  --pixie-green-light: #d1e5c4;
-  --pixie-green-dark: #9bc088;
-  --chrome-white-dark: #b5b2a3;
+  --primary: #708090;        /* slate-gray - Color principal */
+  --secondary: #77848e;      /* pigeon-post - Color secundario */
+  --accent: #b7d3ac;         /* pixie-green - Color de acento */
+  --neutral: #cac7b7;        /* chrome-white - Color neutro */
+  --background: #fffaf4;     /* bridal-heath - Color de fondo */
 }
