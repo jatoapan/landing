@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=font-gaegu&family=font-righteous&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./stylesheet/styles.css">
+  <link rel="stylesheet" href="/stylesheet/styles.css">
   <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-database-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-storage-compat.js"></script>
@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
-  <script type="module" src="./js/terms.js"></script>
+  <script type="module" src="/js/terms.js"></script>
 </head>
 
 <body style="background: var(--background);" class="text-gray-600 work-sans leading-normal text-base tracking-normal">
@@ -104,48 +104,42 @@
             class="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:background: var(--background);"
             style="background: var(--background); border-color: var(--neutral);">
             <li class="mr-0">
-              <a href="index.html" class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
+              <a href="/" class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
                 style="color: var(--secondary);" onmouseover="this.style.color='var(--accent)'"
                 onmouseout="this.style.color='var(--secondary)'">Inicio</a>
             </li>
             <li>
-              <a href="index.html#about"
-                class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
+              <a href="/#about" class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
                 style="color: var(--secondary);" onmouseover="this.style.color='var(--accent)'"
                 onmouseout="this.style.color='var(--secondary)'">¿Quién Soy?</a>
             </li>
             <li>
-              <a href="index.html#categories"
-                class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
+              <a href="/#categories" class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
                 style="color: var(--secondary);" onmouseover="this.style.color='var(--accent)'"
                 onmouseout="this.style.color='var(--secondary)'">Categorías</a>
             </li>
             <li>
-              <a href="index.html#products"
-                class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
+              <a href="/#products" class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
                 style="color: var(--secondary);" onmouseover="this.style.color='var(--accent)'"
                 onmouseout="this.style.color='var(--secondary)'">Productos</a>
             </li>
             <li>
-              <a href="index.html#values"
-                class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
+              <a href="/#values" class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
                 style="color: var(--secondary);" onmouseover="this.style.color='var(--accent)'"
                 onmouseout="this.style.color='var(--secondary)'">Valores</a>
             </li>
             <li>
-              <a href="index.html#testimonies"
-                class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
+              <a href="/#testimonies" class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
                 style="color: var(--secondary);" onmouseover="this.style.color='var(--accent)'"
                 onmouseout="this.style.color='var(--secondary)'">Testimonios</a>
             </li>
             <li>
-              <a href="index.html#contact"
-                class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
+              <a href="/#contact" class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
                 style="color: var(--secondary);" onmouseover="this.style.color='var(--accent)'"
                 onmouseout="this.style.color='var(--secondary)'">Contacto</a>
             </li>
             <li>
-              <a href="terms.html" class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
+              <a href="/terms" class="block py-2 px-3 md:p-0 rounded-sm transition-all duration-300 font-gaegu"
                 style="color: var(--accent);" onmouseover="this.style.color='var(--primary)'"
                 onmouseout="this.style.color='var(--accent)'">Términos y Condiciones</a>
             </li>
@@ -192,7 +186,8 @@
                     stroke="white" stroke-width="1"></path>
                 </svg>
               </div>
-              <h2 class="font-gaegu text-3xl font-bold tracking-wide" style="color: var(--primary);">Cosas que SÍ haré</h2>
+              <h2 class="font-gaegu text-3xl font-bold tracking-wide" style="color: var(--primary);">Cosas que SÍ haré
+              </h2>
             </div>
 
             <ul class="space-y-3 list-disc list-inside mb-8">
@@ -222,7 +217,8 @@
 
           <!-- Imagen de Firebase -->
           <div class="flex-shrink-0">
-            <img id="yes-image" class="w-64 h-64 object-cover rounded-xl shadow-lg" alt="Cosas que sí haré" src="https://via.placeholder.com/256x256/51cf66/ffffff?text=Cargando..." />
+            <img id="yes-image" class="w-64 h-64 object-cover rounded-xl shadow-lg" alt="Cosas que sí haré"
+              src="https://via.placeholder.com/256x256/51cf66/ffffff?text=Cargando..." />
           </div>
         </div>
 
@@ -240,7 +236,8 @@
                     stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
               </div>
-              <h2 class="font-gaegu text-3xl font-bold tracking-wide" style="color: var(--primary);">Cosas que NO haré</h2>
+              <h2 class="font-gaegu text-3xl font-bold tracking-wide" style="color: var(--primary);">Cosas que NO haré
+              </h2>
             </div>
 
             <ul class="space-y-3 list-disc list-inside">
@@ -255,7 +252,8 @@
 
           <!-- Imagen de Firebase -->
           <div class="flex-shrink-0">
-            <img id="no-image" class="w-64 h-64 object-cover rounded-xl shadow-lg" alt="Cosas que no haré" src="https://via.placeholder.com/256x256/ff6b6b/ffffff?text=Cargando..." />
+            <img id="no-image" class="w-64 h-64 object-cover rounded-xl shadow-lg" alt="Cosas que no haré"
+              src="https://via.placeholder.com/256x256/ff6b6b/ffffff?text=Cargando..." />
           </div>
         </div>
 
@@ -274,7 +272,8 @@
                     stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
                 </svg>
               </div>
-              <h2 class="font-gaegu text-3xl font-bold tracking-wide" style="color: var(--primary);">Términos y Condiciones</h2>
+              <h2 class="font-gaegu text-3xl font-bold tracking-wide" style="color: var(--primary);">Términos y
+                Condiciones</h2>
             </div>
 
             <ul class="space-y-3 list-disc list-inside">
@@ -297,7 +296,8 @@
 
           <!-- Imagen de Firebase -->
           <div class="flex-shrink-0">
-            <img id="terms-image" class="w-64 h-64 object-cover rounded-xl shadow-lg" alt="Términos y condiciones" src="https://via.placeholder.com/256x256/845ef7/ffffff?text=Cargando..." />
+            <img id="terms-image" class="w-64 h-64 object-cover rounded-xl shadow-lg" alt="Términos y condiciones"
+              src="https://via.placeholder.com/256x256/845ef7/ffffff?text=Cargando..." />
           </div>
         </div>
 
@@ -337,34 +337,36 @@
               style="background: linear-gradient(135deg, var(--accent), var(--primary));">
               <svg width="140" height="140" viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <!-- Tarjeta principal -->
-                <rect x="20" y="35" width="100" height="70" rx="8" fill="white" stroke="white" stroke-width="2"/>
-                
+                <rect x="20" y="35" width="100" height="70" rx="8" fill="white" stroke="white" stroke-width="2" />
+
                 <!-- Banda magnética -->
-                <rect x="20" y="50" width="100" height="12" fill="#2563eb"/>
-                
+                <rect x="20" y="50" width="100" height="12" fill="#2563eb" />
+
                 <!-- Chip -->
-                <rect x="30" y="70" width="16" height="12" fill="#fbbf24" rx="2"/>
-                <rect x="32" y="72" width="12" height="8" fill="#f59e0b" rx="1"/>
-                
+                <rect x="30" y="70" width="16" height="12" fill="#fbbf24" rx="2" />
+                <rect x="32" y="72" width="12" height="8" fill="#f59e0b" rx="1" />
+
                 <!-- Números -->
-                <rect x="30" y="88" width="6" height="1" fill="#6b7280"/>
-                <rect x="38" y="88" width="6" height="1" fill="#6b7280"/>
-                <rect x="46" y="88" width="6" height="1" fill="#6b7280"/>
-                <rect x="54" y="88" width="6" height="1" fill="#6b7280"/>
-                
+                <rect x="30" y="88" width="6" height="1" fill="#6b7280" />
+                <rect x="38" y="88" width="6" height="1" fill="#6b7280" />
+                <rect x="46" y="88" width="6" height="1" fill="#6b7280" />
+                <rect x="54" y="88" width="6" height="1" fill="#6b7280" />
+
                 <!-- Logo PayPal -->
-                <circle cx="95" cy="85" r="8" fill="white" stroke="#0070f3" stroke-width="2"/>
-                <text x="95" y="89" font-family="Arial" font-size="8" font-weight="bold" fill="#0070f3" text-anchor="middle">P</text>
-                
+                <circle cx="95" cy="85" r="8" fill="white" stroke="#0070f3" stroke-width="2" />
+                <text x="95" y="89" font-family="Arial" font-size="8" font-weight="bold" fill="#0070f3"
+                  text-anchor="middle">P</text>
+
                 <!-- Símbolo $ -->
-                <circle cx="70" cy="20" r="8" fill="white"/>
-                <text x="70" y="25" font-family="Arial" font-size="12" font-weight="bold" fill="#059669" text-anchor="middle">$</text>
-                
+                <circle cx="70" cy="20" r="8" fill="white" />
+                <text x="70" y="25" font-family="Arial" font-size="12" font-weight="bold" fill="#059669"
+                  text-anchor="middle">$</text>
+
                 <!-- Monedas flotantes -->
-                <circle cx="25" cy="25" r="5" fill="white" opacity="0.8"/>
+                <circle cx="25" cy="25" r="5" fill="white" opacity="0.8" />
                 <text x="25" y="28" font-family="Arial" font-size="6" fill="#f59e0b" text-anchor="middle">¢</text>
-                
-                <circle cx="115" cy="25" r="5" fill="white" opacity="0.8"/>
+
+                <circle cx="115" cy="25" r="5" fill="white" opacity="0.8" />
                 <text x="115" y="28" font-family="Arial" font-size="6" fill="#059669" text-anchor="middle">€</text>
               </svg>
             </div>
@@ -372,19 +374,23 @@
         </div>
 
         <!-- Sección de contacto final mejorada -->
-        <div class="text-center mt-16 p-12 rounded-2xl" style="background: linear-gradient(135deg, var(--neutral), var(--background)); border: 2px solid var(--accent);">
+        <div class="text-center mt-16 p-12 rounded-2xl"
+          style="background: linear-gradient(135deg, var(--neutral), var(--background)); border: 2px solid var(--accent);">
           <div class="max-w-2xl mx-auto">
             <h2 class="font-gaegu text-4xl font-bold tracking-wide mb-6" style="color: var(--primary);">
               ¿Interesado en una comisión?
             </h2>
             <p class="font-righteous text-lg mb-8 leading-relaxed" style="color: var(--secondary);">
-              Si estás interesado en comprar alguna comisión, no dudes en contactarme. Estaré encantado de trabajar contigo para crear algo único y especial.
+              Si estás interesado en comprar alguna comisión, no dudes en contactarme. Estaré encantado de trabajar
+              contigo para crear algo único y especial.
             </p>
-            <a href="index.html#contact"
+            <a href="/#contact"
               class="inline-flex items-center px-12 py-4 rounded-full font-righteous text-lg font-semibold transition-all duration-500 transform hover:scale-110 hover:shadow-2xl"
               style="background: linear-gradient(135deg, var(--accent), var(--primary)); color: var(--background); box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
               <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                </path>
               </svg>
               Contáctame Ahora
             </a>
