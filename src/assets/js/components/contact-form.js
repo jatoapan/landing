@@ -19,9 +19,20 @@ export class ContactForm {
 
   addRealTimeValidation() {
     const inputs = this.form.querySelectorAll('input, textarea');
+    
+    // SOLO AGREGAMOS DEBOUNCE - Todo lo demás igual
+    const debouncedValidation = this.debounce((input) => {
+      if (input.value.trim()) {
+        this.validateInput(input);
+      }
+    }, 300);
+
     inputs.forEach(input => {
       input.addEventListener('blur', () => this.validateInput(input));
-      input.addEventListener('input', () => this.clearError(input));
+      input.addEventListener('input', () => {
+        this.clearError(input);
+        debouncedValidation(input); // Cambiamos solo esto
+      });
     });
   }
 
@@ -105,7 +116,6 @@ export class ContactForm {
     const formData = this.getFormData();
     console.log('📋 Datos del formulario:', formData);
     
-    // Validación completa
     const errors = this.validateForm(formData);
     
     if (errors.length > 0) {
@@ -220,5 +230,14 @@ export class ContactForm {
 
   isValidEmail(email) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+
+  // SOLO AGREGAMOS ESTA FUNCIÓN
+  debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func.apply(this, args), wait);
+    };
   }
 }

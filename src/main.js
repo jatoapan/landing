@@ -17,26 +17,23 @@ class App {
 
   async init() {
     try {
+      // Inicializar header inmediatamente
+      HeaderScroll.init();
+
+      // Todo lo demás igual
       const preloadPromise = StorageService.preloadCriticalImages();
       
-      const parallelPromises = [
+      await Promise.all([
         StorageService.loadLogos(),
         StorageService.loadAboutImage(),
-        HeaderScroll.init()
-      ];
-
-      const componentPromises = [
         Carousel.initVerticalCarousel(),
         Carousel.initHorizontalCarousel(),
         Categories.render(),
         this.products.renderAllProducts(),
         this.testimonies.render()
-      ];
+      ]);
 
-      await Promise.all(parallelPromises);
-      await Promise.all(componentPromises);
       await preloadPromise;
-
       console.log('🚀 App initialized successfully with caching');
     } catch (error) {
       console.error('❌ Error initializing app:', error);
@@ -44,7 +41,8 @@ class App {
   }
 }
 
-window.addEventListener('load', () => {
+// Solo este event listener
+document.addEventListener('DOMContentLoaded', () => {
   const app = new App();
   app.init();
 });

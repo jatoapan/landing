@@ -5,6 +5,9 @@ import { HeaderScroll } from './assets/js/components/header.js';
 class TermsApp {
   async init() {
     try {
+      // Inicializar header inmediatamente
+      HeaderScroll.init();
+      
       // Precargar imágenes críticas
       const preloadPromise = StorageService.preloadCriticalImages();
       
@@ -12,8 +15,7 @@ class TermsApp {
       await Promise.all([
         StorageService.loadLogos(),
         StorageService.loadTermsImages(),
-        Carousel.initVerticalCarousel(),
-        HeaderScroll.init()
+        Carousel.initVerticalCarousel()
       ]);
 
       await preloadPromise;
@@ -24,7 +26,8 @@ class TermsApp {
   }
 }
 
-window.addEventListener('load', () => {
+// Solo este event listener
+document.addEventListener('DOMContentLoaded', () => {
   const app = new TermsApp();
   app.init();
 });

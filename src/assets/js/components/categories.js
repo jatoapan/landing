@@ -12,7 +12,7 @@ export class Categories {
         'Medio Cuerpo': 'half-body-container',
         'Cabeza': 'head-container',
         'Icono': 'icons-container',
-        'One Piece': 'swiper-wrapper-2',
+        'One Piece': 'one-piece-container',
         'Overwal': 'overlays-container',
         'En Venta': 'paintings-container',
         'Semi Realista': 'semi-realistic-container',
