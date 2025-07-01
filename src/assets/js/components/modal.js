@@ -9,7 +9,7 @@ export class Modal {
     const modal = document.createElement('div');
     modal.id = 'image-modal';
     modal.className = 'fixed inset-0 flex items-center justify-center z-50 hidden';
-    modal.style.background = 'rgba(112, 128, 144, 0.9)'; // primary con transparencia
+    modal.style.background = 'rgba(112, 128, 144, 0.9)';
     modal.innerHTML = `
       <div class="relative max-w-4xl max-h-full p-4 flex items-center justify-center">
         <div class="relative rounded-2xl overflow-hidden" 

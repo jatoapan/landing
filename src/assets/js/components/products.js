@@ -11,7 +11,7 @@ export class Products {
     this.lazyObserver = new IntersectionObserver(
       (entries) => this.handleLazyLoad(entries),
       {
-        rootMargin: '100px', // Cargar 100px antes de ser visible
+        rootMargin: '100px',
         threshold: 0.1
       }
     );

@@ -563,7 +563,7 @@
             <h2 class="font-gaegu text-2xl font-bold mb-6 text-center" style="color: var(--primary);">
               Envíame un mensaje
             </h2>
-            <form id="contact-form" action="">
+            <form id="contact-form">
               <div class="grid md:grid-cols-2 grid-cols-1 gap-x-8">
                 <div class="relative mb-6">
                   <input type="text" id="contact-name" name="name"
@@ -573,7 +573,7 @@
                     onblur="this.style.borderColor='var(--neutral)'" />
                 </div>
                 <div class="relative mb-6">
-                  <input type="text" id="contact-email" name="email"
+                  <input type="email" id="contact-email" name="email"
                     class="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs rounded-full transition-all duration-300"
                     style="background: var(--background); color: var(--primary); border: 1px solid var(--neutral);"
                     placeholder="Email Address" required onfocus="this.style.borderColor='var(--accent)'"
@@ -582,7 +582,7 @@
               </div>
               <div class="grid md:grid-cols-2 grid-cols-1 gap-x-8">
                 <div class="relative mb-6">
-                  <input type="text" id="contact-phone" name="phone"
+                  <input type="tel" id="contact-phone" name="phone"
                     class="block w-full h-11 px-5 py-2.5 leading-7 text-base font-normal shadow-xs rounded-full transition-all duration-300"
                     style="background: var(--background); color: var(--primary); border: 1px solid var(--neutral);"
                     placeholder="Phone Number" required onfocus="this.style.borderColor='var(--accent)'"
@@ -604,24 +604,26 @@
                   onblur="this.style.borderColor='var(--neutral)'" />
               </div>
               <div class="relative mb-6">
-                <textarea type="text" id="contact-message" name="message"
+                <textarea id="contact-message" name="message"
                   class="block w-full h-40 px-5 py-2.5 leading-7 resize-none text-base font-normal shadow-xs rounded-2xl transition-all duration-300"
                   style="background: var(--background); color: var(--primary); border: 1px solid var(--neutral);"
                   placeholder="Your Message" required onfocus="this.style.borderColor='var(--accent)'"
                   onblur="this.style.borderColor='var(--neutral)'"></textarea>
               </div>
               <div class="flex items-center justify-center">
-                <button
+                <button type="submit"
                   class="w-52 h-12 transition-all duration-700 rounded-full shadow-xs text-white text-base font-semibold leading-6"
                   style="background: var(--accent);" onmouseover="this.style.backgroundColor='var(--primary)'"
                   onmouseout="this.style.backgroundColor='var(--accent)'">
+                  <svg class="w-5 h-5 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                  </svg>
                   Send Message
                 </button>
               </div>
             </form>
           </div>
         </div>
-
         <!-- Contenedor del mapa -->
         <div class="w-full lg:w-1/2 p-6 flex justify-center items-start">
           <div class="rounded-2xl shadow-xl p-6 w-full"

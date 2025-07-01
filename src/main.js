@@ -5,27 +5,26 @@ import { Products } from './assets/js/components/products.js';
 import { Testimonies } from './assets/js/components/testimonies.js';
 import { Modal } from './assets/js/components/modal.js';
 import { HeaderScroll } from './assets/js/components/header.js';
+import { ContactForm } from './assets/js/components/contact-form.js';
 
 class App {
   constructor() {
     this.modal = new Modal();
     this.products = new Products(this.modal);
     this.testimonies = new Testimonies(this.modal);
+    this.contactForm = new ContactForm();
   }
 
   async init() {
     try {
-      // Precargar imágenes críticas primero
       const preloadPromise = StorageService.preloadCriticalImages();
       
-      // Cargar en paralelo otros servicios no críticos
       const parallelPromises = [
         StorageService.loadLogos(),
         StorageService.loadAboutImage(),
         HeaderScroll.init()
       ];
 
-      // Inicializar carruseles y components
       const componentPromises = [
         Carousel.initVerticalCarousel(),
         Carousel.initHorizontalCarousel(),
@@ -34,7 +33,6 @@ class App {
         this.testimonies.render()
       ];
 
-      // Ejecutar en fases para optimizar la percepción de velocidad
       await Promise.all(parallelPromises);
       await Promise.all(componentPromises);
       await preloadPromise;

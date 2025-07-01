@@ -2,11 +2,11 @@ import { firestore } from '../config/firebase-config.js';
 
 export class FirestoreService {
   static firestoreCache = new Map();
-  static CACHE_DURATION = 15 * 60 * 1000; // 15 minutos para Firestore
+  static CACHE_DURATION = 15 * 60 * 1000; 
 
   static async getCollection(collectionName) {
     try {
-      // Verificar cache
+
       if (this.firestoreCache.has(collectionName)) {
         const cachedData = this.firestoreCache.get(collectionName);
         const now = Date.now();
@@ -26,7 +26,6 @@ export class FirestoreService {
         items.push({ id: doc.id, ...doc.data() });
       });
 
-      // Cache los datos
       this.firestoreCache.set(collectionName, {
         data: items,
         timestamp: Date.now()
@@ -43,7 +42,6 @@ export class FirestoreService {
     try {
       const docRef = await firestore.collection(collectionName).add(data);
       
-      // Invalidar cache cuando se agregan nuevos datos
       this.firestoreCache.delete(collectionName);
       console.log(`🔄 Cache invalidated for: ${collectionName}`);
       
@@ -101,7 +99,6 @@ export class FirestoreService {
     return await this.getCollection('one-piece-paintings');
   }
 
-  // Limpiar cache manualmente
   static clearFirestoreCache() {
     this.firestoreCache.clear();
     console.log('🧹 Firestore cache cleared');
